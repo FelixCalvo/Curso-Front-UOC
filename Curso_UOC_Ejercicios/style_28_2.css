@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* evita que se añadan los anchos de un padding a la capa(div) que lo envuelve. */
+}
+
+.container{
+  background-color: rgb(40, 117, 84);
+  width: 1200px;
+  padding: 10px;
+  margin: auto;
+}
+
+h1{
+  color: white;
+  padding: 20px 0 20px 0;
+  font-size: 3rem;
+}
+
+.primerBox{
+  background-color: rgb(255, 255, 255);
+  border: 3px solid;
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+}
+
+.secondBox{
+  float: left;
+  border: 3px solid rgb(135, 38, 0);
+  width: 50%;
+  background-color: rgb(171, 90, 58);
+  padding: 10px;
+  margin-top: 25px;
+  color: white;
+}
+
+.tercerBox{
+  float: right;
+  border: 3px solid rgb(135, 77, 0);
+  width: 50%;
+  background-color: rgb(171, 122, 58);
+  padding: 10px;
+  margin-top: 25px;
+  color: white;
+}
+
+.cuartoBox{
+  border: 3px dashed rgb(107, 126, 140);
+  width: 50%;
+  background-color: rgb(43, 81, 110);
+  padding: 10px;
+  margin: 20px auto;
+  color: white;
+}

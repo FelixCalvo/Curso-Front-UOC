@@ -1,0 +1,101 @@
+body{
+  background-color: rgb(212, 212, 212);
+  font-family: sans-serif;
+}
+
+h1{
+  background-color: black;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+h2 {
+  display: inline;
+}
+
+p{
+  text-align: justify;
+}
+
+.encabezado{
+  color: white;
+  text-align: right;
+}
+
+.container{
+  text-align: center;
+  /*width: 650px;*/
+  width: 800px;
+  margin: auto;
+}
+
+.tarjeta{
+  margin: 70px auto;
+}
+
+.lineaBlanca{
+  height: 5px;
+  background-color: white;
+}
+
+.lineaNegra{
+  height: 3px;
+  background-color: black;
+  margin-top: 60px;
+}
+
+.fecha{
+  margin-top: 20px;
+}
+
+.reloj{  
+  padding: 5px;
+  background-color: rgb(128, 128, 128);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 5px; /*espacio entre letras*/
+}
+
+.puntosRojos{
+  font-style: italic;
+  border-bottom: 1px dashed red;
+  font-size: 1.5rem;
+  font-family: serif;
+}
+
+.fondoBlanco{
+  background-color: white;
+  color: red;
+}
+
+.mayusculas{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: small;
+}
+
+.primeraLetra{
+  font-size: 1.125rem;
+  ;
+}
+
+.azul{
+  color: blue;
+}
+
+.basura{
+  /*se pone en mayusculas y las mayusculas originales si las hay salen un poco mas grandes que el resto*/
+  font-variant: small-caps;
+}
+
+/*
+
+<span class="primeraLetra">J</span><span class="mayusculas">ose</span>&nbsp;
+<span class="primeraLetra"
+>M</span><span class="mayusculas">anuel</span>
+<span class="primeraLetra"
+>S</span><span class="mayusculas">oria</span>
+
+
+*/

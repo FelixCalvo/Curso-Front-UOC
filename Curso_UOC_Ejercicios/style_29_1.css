@@ -1,0 +1,12 @@
+.container{
+  background-image: url("./inlineblock.jpg");
+  width: 750px;
+  height: 571px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical{
+  padding: 15px;
+}

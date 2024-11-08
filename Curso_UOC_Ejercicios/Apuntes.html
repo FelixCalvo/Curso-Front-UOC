@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apuntes curso UOC</title>
+  <!-- favicon -->
+  <link rel="icon" href="./libro.png" type="image/png" />
+  <link rel="stylesheet" href="./estilos.css">
+</head>
+<div style="width:1200px; margin: auto;">
+  <img src="./F_html5.png" alt="foto de html5">
+  <img src="./F_logoUOC.png" alt="logo de la UOC" width="61" height="45">
+  <h1 id="Titulo">Apuntes</h1>
+  <h2>¿Qué navegadores soportan tu html?</h2>
+  <p>Puedes introducir tus etiquetas para ver desde que versión de navegador funcionan.</p>
+  <a href="http://caniuse.com/">Revisa tus etiquetas!!!</a>
+  <h2>Formatea tu código</h2>
+  <p>Para hacer legibles las etiquetas</p>
+  <a href="http://freeformatter.com/html-escape.html">Formatea tu código</a>
+  <h2>Fotos del tamaño que quieras</h2>
+  <p>https://pablomonteserin.com/lorem/100x100 <br>Esto hace una foto de 100*100 con los numeros en el centro. Para maquetar. Puedes variar el ancho y alto en el enlace.</p>
+  <h2>Atajos</h2>
+  <p>En el navegador firefox+chrome vemos el código. Control + u </p>
+  <p>Para comentar una linea. Control + ç </p> 
+  <p>Un menu desordenado con 4 li con enlaces a una imagen ul>li*4>a[href="#"]>img<br/>Generamos una tabla de 6 * 6 con un numero dentro de cada celda del 1 al seis en cada fila tr*6>td*6{$@}</p>
+  <p>Para sacar un div con su clase sería div.nombredemiclase</p>
+  <h2>Validar un HTML</h2>
+  <p>Validar un html en W3.org valide:</p>
+  <a href="https://validator.w3.org/#validate_by_input">Valida tu html!!</a>
+  <h2>Teoría HTML</h2>
+  <p>Salto de linea. &lt;br/&gt;</p>
+  <p>Espacio en blanco. &amp;nbsp;</p>
+  <pre>&lt;pre&gt;&lt;/pre&gt; Respetará    todos los espacios en blanco    y los saltos de linea. Mismo ancho de letras. Genera barra scroll horizontal si salimos pantalla.</pre>
+  <p>&lt;strong&gt;&lt;/strong&gt; <strong>Hace que el texto aparezca en negrita</strong></p>
+  <p>&lt;img src="tu_imagen.png" alt="<strong>Texto</strong> que aparece si no encuentra o carga la foto o lo que busca google."&gt; <br/></p>
+  <p>Crear un enlace</p>
+  <p>&lt;a href=&quot;https://validator.w3.org/#validate_by_input&quot;&gt;Valida tu html!!&lt;/a&gt;</p>
+  <p>Usar una foto con un enlace: <br/> &lt;a href=&quot;https://www.laifelstudio.com&quot;&gt; <br/>
+  &lt;img src=&quot;./boton.jfif&quot; alt=&quot;Descripci&oacute;n de la imagen&quot; width=&quot;200&quot;
+  height=&quot;200&quot;&gt;<br/>
+  &lt;/a&gt;</p>
+  <a href="https://www.laifelstudio.com">
+    <img src="./boton.jfif" alt="Descripción de la imagen" width="50" height="50">
+  </a>
+  <p>Cargar video</p>
+  <p>&lt;video src=&quot;leon.mp4&quot; controls=&quot;controls&quot; width=&quot;400&quot; height=&quot;300&quot;
+  poster=&quot;leon.jpg&quot; preload=&quot;preload&quot; autoplay muted&gt;
+  Tu navegador no soporta html5
+  &lt;/video&gt;</p>
+  <video src="leon.mp4" controls="controls" width="400" height="300" poster="leon.jpg" preload="preload">
+    Tu navegador no soporta html5
+  </video>
+  <p>autoplay para que cargue el video nada mas cargar la web no suele funcionar.<br/> autoplay muted para arrancar el video pero muteado.</p>
+  <p>Cargar audio</p>
+  <p>&lt;audio src=&quot;./HakunaMatataItMeansNoWorries.mp3&quot; controls=&quot;controls&quot; width=&quot;400&quot;
+  height=&quot;300&quot; preload=&quot;preload&quot;&gt;
+  Tu navegador no soporta html5
+  &lt;/audio&gt;</p>
+  <audio src="./HakunaMatataItMeansNoWorries.mp3" controls="controls" width="400" height="300" preload="auto">
+    Tu navegador no soporta html5
+  </audio>
+  <h3>Tipo de listas</h3>
+  <p>Listas con enlaces y fotos</p>
+  <p>Lista ordenada<br/>&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.laifelstudio.com&quot;&gt;&lt;img src=&quot;./boton.jfif&quot;
+  alt=&quot;Descripci&oacute;n de la imagen&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.laifelstudio.com&quot;&gt;&lt;img src=&quot;./boton.jfif&quot;
+  alt=&quot;Descripci&oacute;n de la imagen&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;/ol&gt;</p>
+  <ol>
+    <li><a href="https://www.laifelstudio.com"><img src="./boton.jfif" alt="Descripción de la imagen" width="50" height="50"></a>
+    </li>
+    <li><a href="https://www.laifelstudio.com"><img src="./boton.jfif" alt="Descripción de la imagen" width="50" height="50"></a>
+    </li>
+  </ol>
+  <p>Lista desordenada<br/>&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.laifelstudio.com&quot;&gt;&lt;img src=&quot;./boton.jfif&quot;
+  alt=&quot;Descripci&oacute;n de la imagen&quot; width=&quot;50&quot;
+  height=&quot;50&quot;&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.laifelstudio.com&quot;&gt;&lt;img src=&quot;./boton.jfif&quot;
+  alt=&quot;Descripci&oacute;n de la imagen&quot; width=&quot;50&quot;
+  height=&quot;50&quot;&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;/ul&gt;</p>
+  <ul>
+    <li><a href="https://www.laifelstudio.com"><img src="./boton.jfif" alt="Descripción de la imagen" width="50"
+        height="50"></a>
+    </li>
+    <li><a href="https://www.laifelstudio.com"><img src="./boton.jfif" alt="Descripción de la imagen" width="50"
+        height="50"></a>
+    </li>
+  </ul>
+  <p>Lista anidada<br/>Hay que meterlos dentro de los li.<br/>&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;ol&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;/ol&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;ol&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;/ol&gt;&lt;/li&gt;
+  &lt;/ul&gt;</p>
+  <ul>
+    <li><a href="#"><img src="" alt=""></a><ol>
+      <li></li>
+    </ol></li>
+    <li><a href="#"><img src="" alt=""></a></li>
+    <li><a href="#"><img src="" alt=""></a></li>
+    <li><a href="#"><img src="" alt=""></a><ol>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol></li>
+  </ul>
+  <p>Navegar internamente<br/>Se coloca una id, en este caso al H1, para enlazarlo con el enlace precedido de almohadilla.</p>
+  <a href="#Titulo">Ir a título página</a>
+  <p>Stylos</p>
+  <pre>padding-right
+  height
+  background
+  color
+  text-align
+  font-size
+  font-family
+  width</pre>
+  <p>&lt;p style=&quot;padding-right: 50px; height: 200px; background: black; color: blue; text-align: right; font-size:
+  3rem; font-family: Arial, Helvetica, sans-serif; width: 400px;&quot;&gt;HOLA MON&lt;/p&gt;</p>
+  <p style="padding-right: 50px; height: 150px; background: black; color: rgb(116, 116, 204); text-align: right; font-size: 3rem; font-family: Arial, Helvetica, sans-serif; width: 400px;">HOLA MON</p>
+
+  <p>Iframe</p>
+  <p>Seleccionamos el lugar y nos aparece en el sitio un compartir y luego insertar un mapa.</p>
+
+  <div style="margin: auto; width:560px">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JGftIcp2SC0?si=-yKoer8pr3ofqaCR"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>Google maps</p>
+  <p>Seleccionamos compartir y luego insertar.</p>
+  <div style="margin: auto; width:600px">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11964.71286148808!2d2.0005107807777374!3d41.4353545277078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49012b4c29b29%3A0x130ade427191eeec!2s08754%20El%20Papiol%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1730369328959!5m2!1ses!2ses"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <p>En compartir e insertar. Es un div.</p>
+  <div style="padding:75% 0 0 0;position:relative;"><iframe
+      src="https://player.vimeo.com/video/465577548?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+      frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+      style="position:absolute;top:0;left:0;width:100%;height:100%;" title="ACDC - Moneytalks (Official Video)"></iframe>
+  </div>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <p>Insertar favicon<br/>Favicon es el icono que aparece en la pestaña del navegador. Se inserta en el head.</p>
+  <p><span style="background-color: rgb(201, 245, 245);">&lt;link rel=&quot;icon&quot; href=&quot;./libro.png&quot; type=&quot;image/png&quot; /&gt;</span></p>
+  <div></div>
+  <p>Problemas cuando ponemos un padding a un div</p>
+  <p>Se le suma el padding al width y al height: Solucion: usar: <strong>style="box-sizing: border-box;"</strong>.</p>
+  <div style="width: 800px; margin: auto;">
+    <img src="./paddingProblemas.png" alt="problemas padding" style="width: 100%; height: 100%;">
+  </div>
+  <p style="margin-top: 80px;">Overflow</p>Margin colapse Usamos el <strong>overflow:hidden</strong> para que no colapsen
+  los div. Cuando anidamos dos div y el que está dentro le queremos poner un margin, pr ejemplo, el que se ve afectado es el que lo envuelve no al que se lo ponemos. Para evitar esto usaremos <strong>overflow:auto</strong> Por si se salen por los
+  borde por ejemplo el texto en la foto, aparece una <strong>barra de scroll</strong>.<br></p>
+  <p>Define como se comporta una capa cuando su contenido excede sus dimensiones. El valor hidden hace que el contenido se
+  recorte. El valor auto hace que aparezca una barra de scroll en caso de ser necesario</p>
+    <div style="width: 100px; height: 100px; background-color: aqua; padding:50px;">
+      <p>holaaaa aaaaaaaaaaadiooooooooooooooooooossssssssssssssssssssssssssss tyu</p>
+    </div>
+    <div style="width: 100px; height: 100px; background-color: aqua; padding:50px; box-sizing: border-box;">
+      100 * 100 con padding y box-sizing: border-box;
+    </div>
+    <div style="width: 100px; height: 100px; background-color: rgb(15, 146, 26);">
+      100 * 100 sin padding
+    </div>
+    <div style="background-color: greenyellow; width: 200px; height: 200px;">
+      <img src="./picassor2_c2.jpg" alt="">
+    </div>
+    <div style="background-color: greenyellow; width: 50px; height: 50px;">
+      <img src="./picassor2_c2.jpg" alt="">
+    </div>
+
+    <p>Si colocamos un background en lugar de un img, puedes superponer texto por ejemplo. La imagen no forma parte del contenido. No quieres que las imágenes sean incluídas al imprimir</p>
+  <div style="width: 400px; height: 200px; background: url('./teatro.jpg'); margin: auto; overflow: hidden;">  
+      <p style="margin-top: 55px; margin-left: 95px; width: 200px; height: 100px; overflow:auto;">magnam odio repudiandae placeat a deleniti labore, dolore autem aperiam odit libero unde eaque iste nobis cupiditate
+        animi soluta, cum fuga. Rerum eius distinctio molestiae sapiente ut? Obcaecati dolorum quo mas, impedit veniam nostrum
+        ducimus provident asperiores illum error officiis possimus et. Voluptatem quod cupiditate ad dolore modi est alias
+        molestiae, neque ullam? Temporibus nemo maxime corporis optio fuga nostrum reiciendis doloribus veniam iure earum
+        molestiae, nisi, aliquam, sit nulla. Quos ipsum voluptatum laborum quam dicta nihil illum facilis a aliquam eos,
+        assumenda quaerat corporis veniam porro odio alias sit fuga!</p>
+  </div>
+  <p>Tablas<br/>th (centrados y en negrita) son los que encabezan la tabla + td (justo las que continuan debajo en un tr) son las columnas. tr las filas. Se pueden poner enlaces &lt;a&gt;.<abr/>colspan y rowspan hacen desaparecer casillas de la tabla. En el ejemplo construyes una tabla de 3*3 y vas colapsando celdas.</p>
+  <table border="1px">
+    <tr>
+      <th colspan="2"><a href="https://www.laifelstudio.com">Encabezado th(head)</a></th>
+      <th rowspan="3"><a href="https://www.laifelstudio.com">Encabezado derecha th(head)</a>
+    </tr>
+    <tr>
+      <td><strong>td a partir de la primera fila dentro de los tr. </strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero ad ullam optio modi mollitia aut. </td>
+      <td><strong>td a partir de la primera fila dentro de los tr. </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolores alias aspernatur perspiciatis cupiditate ut. Id cumque ullam doloremque.</td>
+    </tr>
+    <tr>
+      <td colspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, corrupti inventore unde cupiditate ut officiis reprehenderit fugiat at quidem, eveniet quam veniam. Consectetur quaerat pariatur molestiae officia recusandae, libero unde?</td>
+    </tr>
+  </table>
+
+  <p>Tabla Picasso<br/>Mejor comenzar haciendo la estructura de las celdas. Se empieza por ejemplo las filas y luego las columnas y <strong>ves borrando las celdas que te sobren de dentro</strong>. Las de fuera lo último. Se puede dar el caso que desde un td se haga un colspan o un rowspan. Luego se pondrán las fotos. Bastante lioso si es la primera vez.<br/>Ejemplo de colapso de filas y columnas en una celda: </p>
+  <pre style="margin: auto; width: 246px; background-color: aqua;">&lt;td rowspan=&quot;2&quot; colspan=&quot;2&quot;&gt;2&lt;/td&gt;</pre><br/>
+  <div style="margin: auto; width: max-content;">
+    <table border="40px" style="float: left; margin-right: 70px;">
+      <tr>
+        <td colspan="6"><img src="./picassor1.jpg" alt="parte cuadro picasso"></td>
+      </tr>
+      <tr>
+        <td rowspan="4"><img src="picassor2_c1.jpg" alt=""></td>
+        <td><img src="picassor2_c2.jpg" alt=""></td>
+        <td colspan="2"><img src="picassor2_c3.jpg" alt=""></td>
+        <td><img src="picassor2_c5.jpg" alt=""></td>
+        <td rowspan="4"><img src="picassor2_c6.jpg" alt=""></td>
+      </tr>
+      <tr>
+        <td><img src="picassor3_c2.jpg" alt=""></td> 
+        <td><img src="picassor3_c3.jpg" alt=""></td>
+        <td rowspan="3"><img src="picassor3_c4.jpg" alt=""></td>
+        <td><img src="picassor3_c5.jpg" alt=""></td>
+      </tr>
+      <tr>
+        <td colspan="2" rowspan="2" style="background-color: aqua;"><img src="picassor4_c2.jpg" alt=""></td>
+        <td><img src="picassor4_c5.jpg" alt=""></td>
+      </tr>
+      <tr>
+        <td><img src="picassor5_c5.jpg" alt=""></td>
+      </tr>
+      <tr>
+        <td colspan="6"><img src="picassor6_c1.jpg" alt=""></td>
+      </tr>
+    </table>
+
+    <table border="1" style="float: left; margin-top: 230px;">
+    <tr>
+      <td colspan="6">1</td>
+    </tr>
+    <tr>
+      <td rowspan="4">1</td>
+      <td>2</td>
+      <td colspan="2">3</td>
+      <td>4</td>
+      <td rowspan="4">5</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td rowspan="3">4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td rowspan="2" colspan="2" style="background-color: aqua;">2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td colspan="6">1</td>
+    </tr>
+    </table>
+    <!-- Este div despeja el float si no sse seguiría usando debajo-->
+    <div style="clear: both;"></div>
+  </div>
+
+  <p><strong>style="float: left";</strong><br>Hace que las tablas, en este caso, se peguen a la izquierda y se pongan una al lado de la otra. Hay que ponerla a las dos porque si no, no podremos usar los margin-top individualmente y afectarían a las dos tablas.</p>
+  <p><strong>&lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;></div></strong><br>Anula el float anterior para poder seguir poniendo objetos debajo de las tablas. Se envuelve en un div y se coloca dentro del div que envuelve a las tablas.</p>
+  <p><strong>tbody, thead, tfoot</strong><br></p>
+  <div style="margin: auto; width: max-content;">
+    <table border="1" style="float: left; margin-top: 50px">
+      <thead>
+        <tr>
+          <th>Elementos</th>
+          <th>de</th>
+          <th>la</th>
+          <th>cabecera</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Y</th>
+          <th>elementos</th>
+          <th>del</th>
+          <th>pie</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>bla bla</td>
+          <td>blep</td>
+          <td>blep</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>bla bla</td>
+          <td>bla</td>
+          <td>bla</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>bura bura</td>
+          <td>bla</td>
+          <td>bura bura</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>4</td>
+          <td>blep blep</td>
+          <td>Ok</td>
+          <td>Ok</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>blip blip</td>
+          <td>Ok</td>
+          <td>Ok</td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="float: left; margin-left: 80px;">
+      <img src="./tablaHeadFoot.png" alt="fotos elementos table">
+    </div>
+    <!-- Este div despeja el float si no sse seguiría usando debajo-->
+    <div style="clear: both;"></div>
+  </div>
+  <p></p>
+
+  thead es la primera fila. tfoot es el pie de la tabla pero en el html se coloca debajo de thead. tbody es para los datos.
+  <p><strong>colgroup, rules="groups"</strong></p>
+  <div style="margin: auto; width: max-content;">
+    <table border="1" rules="groups" style="float: left; margin-top: 50px">
+      <colgroup></colgroup>
+      <colgroup></colgroup>
+      <colgroup></colgroup>
+      <colgroup style="background-color:aqua"></colgroup>
+      
+      <thead>
+        <tr>
+          <th>Elementos</th>
+          <th>de</th>
+          <th>la</th>
+          <th>cabecera</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Y</th>
+          <th>elementos</th>
+          <th>del</th>
+          <th>pie</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>bla bla</td>
+          <td>blep</td>
+          <td>blep</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>bla bla</td>
+          <td>bla</td>
+          <td>bla</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>bura bura</td>
+          <td>bla</td>
+          <td>bura bura</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>4</td>
+          <td>blep blep</td>
+          <td>Ok</td>
+          <td>Ok</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>blip blip</td>
+          <td>Ok</td>
+          <td>Ok</td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="float: left; margin-left: 20px;">
+      <img src="./tablas2.png" alt="fotos elementos table">
+    </div>
+    <!-- Este div despeja el float si no sse seguiría usando debajo-->
+    <div style="clear: both;"></div>
+  </div>
+  <p>Cada colgroup es una columna por orden. En este caso, el coulgroup cuarto es el color aqua de fondo señalado ademas con la flecha rojo en la foto del html.<br>El rules="groups" lo que hace es fusionar las filas de cada tbody en una. En este casso tenemos dos tbody y como podemos ver en la tabla en la zona de los datos efectivamente quedan dos.</p> 
+
+  <table border="1" rules="groups" style="margin: auto;">
+    <colgroup></colgroup>
+    <colgroup></colgroup>
+    <colgroup style="background-color: aqua;"></colgroup>
+    <thead>
+      <tr>
+        <th>Alumno</th>
+        <th>Mes</th>
+        <th>Nota</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td>Nota media</td>
+        <td></td>
+        <td>6</td>
+      </tr>
+    </tfoot > 
+    <tbody style="color: brown;"> 
+      <tr>
+        <td>Pjjj</td>
+        <td>Primero</td>
+        <td>C</td>
+      </tr>
+      <tr>
+        <td>gfgfgf</td>
+        <td>Primero</td>
+        <td>fgfgfgf</td>
+      </tr>
+      <tr>
+        <td>fgfgf</td>
+        <td>Primero</td>
+        <td>fgfgfg</td>
+      </tr>
+    </tbody>
+    <tbody style="color: green;">
+      <tr>
+        <td>fgfgf</td>
+        <td>fgfgf</td>
+        <td>fgfgfg</td>
+      </tr>
+      <tr>
+        <td>fgfgf</td>
+        <td>fgfgf</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>gfgfgf</td>
+        <td>fgfgf</td>
+        <td>fgfgf</td>
+      </tr>
+    </tbody>
+    <tbody style="color: blue;">
+      <tr>
+        <td>fgfgfgf</td>
+        <td>fgfgfg</td>
+        <td>fgfgf</td>
+      </tr>
+      <tr>
+        <td>fgfgf</td>
+        <td>fgfg</td>
+        <td>gfg</td>
+      </tr>
+      <tr>
+        <td>fgfgf</td>
+        <td>fggff</td>
+        <td>gfgfgf</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Ejercicio propuesto.</p>
+  <div style="margin: auto; width: max-content;">
+    <table style="float:left; margin: auto; width: 300px;">
+      <tr>
+        <td colspan="2"><h1>Maquetación de una newsletter</h1></td>
+      </tr>
+      <tr>
+        <td colspan="2"><img src="./300X300.png" alt="foto vacia de 300x300"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><h2>Novedades</h2></td>
+      </tr>
+      <tr>
+        <tr>
+          <td colspan="2"><img src="./300X300.png" alt="foto vacia de 300x300"></td>
+        </tr>
+      </tr>
+      <tr>
+        <td colspan="2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </td>
+      </tr>
+      <tr>
+        <td><img src="./80X80.png" alt="foto vacia de 80X80"></td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam,</td>
+      </tr>
+      <tr>
+        <td><img src="./80X80.png" alt="foto vacia de 80X80"></td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</td>
+      </tr>
+      <tr>
+        <td><img src="./80X80.png" alt="foto vacia de 80X80"></td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</td>
+      </tr>
+      <tr>
+        <td><img src="./80X80.png" alt="foto vacia de 80X80"></td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</td>
+      </tr>
+    </table>
+    <table>
+      <tr style="height: 429px;">
+        <td colspan="2">
+          <ul style="margin-left: 50px; margin-top: 150px;">
+            <li>Utiliza tablas para la maquetación<br> global. Intenta evitar los divs.</li>
+            <li>Supón un ancho de documento de<br> 500-600px</li>
+            <li>Escribe el CSS inline o en la<br> cabecera, no en un documento<br> externo.</li>
+            <li>Utiliza una ruta ezterna para las<br>imágenes, no las adjuntes.</li>
+            <li>Evita Flash y Javascript.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><h2>Nuevos cursos</h2></td>
+      </tr>
+      <tr>
+        <td><img src="./150x150.png" alt="foto vacia de 150x150"></td>
+        <td><img src="./150x150.png" alt="foto vacia de 150x150"></td>
+      </tr>
+      <tr>
+        <td><img src="./150x150.png" alt="foto vacia de 150x150"></td>
+        <td><img src="./150x150.png" alt="foto vacia de 150x150"></td>
+      </tr>
+      <tr>
+        <td><img src="./150x150.png" alt="foto vacia de 150x150"></td>
+        <td><img src="./150x150.png" alt="foto vacia de 150x150"></td>
+      </tr>
+      <tr>
+        <td><img src="./150x150.png" alt="foto vacia de 150x150"></td>
+        <td><img src="./150x150.png" alt="foto vacia de 150x150"></td>
+      </tr>
+    </table>
+    <!-- Este div despeja el float si no sse seguiría usando debajo-->
+    <div style="clear: both;"></div>
+  </div>
+  <p>El ejercicio son dos tablas una al lado de la otra. El ejercicio del profe lo hizo con dos tablas pero una encima de
+    otra.</p>
+  <div style="width: 800px; margin: auto;">
+    <p>Ejercicio de maquetacion vertical:</p>
+    <div style="background-color: #373F4C;">    
+      <img src="./cabecera.gif" alt="cabecera ejercicio maquetacion vertical">
+    </div>
+    <div style="text-align: center; background-color: #373F4C;">
+      <h1 style="color: white; margin-top:0; margin-bottom: 0; padding: 5px 0 5px 0;">Cabecera</h1>
+    </div>
+    <div style="color: white; padding: 25px; background-color: #373F4C;">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque enim voluptatibus magni excepturi a molestias aut
+        dolor ullam iusto dignissimos dolorum commodi, neque possimus saepe? Dolores odio autem nemo nostrum.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sint commodi alias libero tempore praesentium
+        harum amet! Rem natus vel, odio impedit fugiat a et. Tenetur quasi deserunt nemo voluptates.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sapiente, delectus fugiat repellendus magni hic
+        dolorem
+        necessitatibus molestiae similique? Quisquam sunt obcaecati perferendis nihil rem quos soluta est modi voluptas.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptate ipsum mollitia dolorum quis,
+        necessitatibus
+        corporis distinctio sequi nobis ea autem aspernatur cumque id delectus, ullam, doloribus rerum repudiandae saepe.
+      </p>
+    </div>
+    <div>
+      <img src="./baseCabecera.gif" alt="base cabecera ejercicio maquetacion vertical">
+    </div>
+  </div>
+      
+  <p>Ejercicio de maquetacion:</p>
+  <div style="background-color: rgb(248, 232, 13); width: 1200px; margin: auto;">
+    <div style="margin: auto; width: 1021px; background-color: azure;">
+      <div style="background-color: aqua;">
+        <img src="./dummies.jpg" alt="ejercicio dummies maquetacion">
+      </div>
+      <div style="background-color: salmon; padding: 20px;">
+        <ul>
+          <li>
+            FFFFFFFFFFFFFFFFFFFFFFFFF consectetur adipisicing elit. Laborum, deleniti. Nobis, ipsa sapiente,
+            architecto a
+            adipisci ducimus recusandae, ea ipsam accusantium porro eligendi ratione quos delectus illo quo ex minus?
+          </li>
+          <li>
+            FFFFFFFFFFFFFFFFFFFFFFFFF consectetur adipisicing elit. Laborum, deleniti. Nobis, ipsa sapiente,
+            architecto a
+            adipisci ducimus recusandae, ea ipsam accusantium porro eligendi ratione quos delectus illo quo ex minus?
+          </li>
+          <li>FFFFFFFFFFFFFFFFFFFFFFFFF consectetur adipisicing elit. Laborum, deleniti. Nobis, ipsa sapiente,
+            architecto a
+            adipisci ducimus recusandae, ea ipsam accusantium porro eligendi ratione quos delectus illo quo ex minus?
+          </li>
+          <li>FFFFFFFFFFFFFFFFFFFFFFFFF consectetur adipisicing elit. Laborum, deleniti. Nobis, ipsa sapiente,
+            architecto a
+            adipisci ducimus recusandae, ea ipsam accusantium porro eligendi ratione quos delectus illo quo ex minus?
+          </li>
+          <li>FFFFFFFFFFFFFFFFFFFFFFFFF consectetur adipisicing elit. Laborum, deleniti. Nobis, ipsa sapiente,
+            architecto a
+            adipisci ducimus recusandae, ea ipsam accusantium porro eligendi ratione quos delectus illo quo ex minus?
+          </li>
+          <li>
+            FFFFFFFFFFFFFFFFFFFFFFFFF consectetur adipisicing elit. Laborum, deleniti. Nobis, ipsa sapiente,
+            architecto a
+            adipisci ducimus recusandae, ea ipsam accusantium porro eligendi ratione quos delectus illo quo ex minus?
+          </li>
+        </ul>
+      </div>
+  
+    </div>
+  </div>
+
+  <p>Ejercicio de display in line, block. <br>Los div o los p son de saque display block. Con los display si los ponemos en inline-block (para poner un div al lado de otro) tambien no se ajustan perfectamente queda un espacio entre los div. Si en el html los pegamos sin hacer el salto de linea no se ven.</p>
+
+ <div style="width: 1200px; background-color: aqua;">
+  <div style="background: url('./inlineblock.jpg'); margin: auto;  width: 750px; height: 571px;">
+    <div style="display: inline-block; width: 33.3%; box-sizing: border-box; padding: 20px; background-color: blueviolet;">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi minus neque, ab omnis atque ex facere aperiam
+        debitis, excepturi eius aliquam est, possimus non reiciendis nam assumenda aliquid. Ea, nulla. Tracatra
+    </div><div style="display: inline-block; width: 33.3%; box-sizing: border-box; padding: 20px; background-color: blueviolet;">
+        Culpa quisquam recusandae explicabo aspernatur aperiam unde? Ut illum qui quia velit soluta rem tempore nobis quos
+        delectus? Qui maiores vero nesciunt distinctio aliquid velit labore quia beatae veniam ullam.
+    </div><div style="display: inline-block; width: 33.3%; box-sizing: border-box; padding: 20px; background-color: blueviolet;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aspernatur? Neque ex repellat numquam modi cumque nobis. Nulla facere esse quibusdam laboriosam neque et quidem qui dolor eius, placeat cumque?
+    </div>       
+    </div>  
+  </div>
+
+  <p>Enlaces: <br>Los enlaces de base, son display inline</p>
+    <a href="" style="color: black;">No hace falta tocar nada ya que es el primero</a>
+    <a href="" style="display: block;">Ponemos dos enlaces y vemos que son display in line y que para verlos en vertical debemos ponerlos en display block</a>
+
+  <h3>float:left</h3>
+  <p>Como display inline-block para los block pero no deja espacios entrre los div. Mejor. <br><strong>&lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;</strong>, recordar esta linea ponerla al finalizar con los float left ya que si no seguirá haciendolo. A ambos lados.</p>
+  
+  <div style="background-color: red; width: 100px; height: 100px; float: left;"></div>
+  <div style="background-color: green; width: 100px; height: 100px; float: left;"></div>
+  <div style="background-color: blue; width: 100px; height: 100px; float: left;"></div>
+
+  <!-- Este div despeja el float si no sse seguiría usando debajo-->
+  <div style="clear: both;"></div>
+  <div style="margin: auto; width: 936px;">
+    <img src="./float_left.png" alt="ejercicio 1 float left" style="width: 50%; height: 50;">
+  </div>
+<p>Capas con float:left dentro de otra capa con <strong>overflow:hidden</strong>.
+Para que el tamaño de las capas internas afecten a la capa externa, debemos añadir el estilo overflow:hidden a la capa
+externa. Si lo quitamos no se ve la capa externa.</p>
+  <div style="background-color: pink; overflow: hidden;">
+    <div style="background-color: red; width: 100px; height: 100px;float: left;"></div>
+    <div style="background-color: green; width: 100px; height: 100px;float: left;"></div>
+    <div style="background-color: blue; width: 100px; height: 100px;float: left;"></div>
+  </div>
+  <p>
+    Este posicionamiento hace que la capa contenedora de los div con float no crezca según estos van creciendo. Para
+    solucionarlo, puedo poner <strong>overflow:auto u overflow:hidden</strong> a la capa contenedora.
+    El estilo <strong>clear:right</strong> hace que cuando usas float no quepan elementos a la derecha. El estilo <strong>clear:both</strong> hace que no
+    quepan a ambos lados.
+  </p>
+  <p>Ejercicio de float: left</p>
+  <div style="width: 1200px; height: 571px; background-color: aqua; margin: auto;">
+    <div style="background: url('./inlineblock.jpg'); margin: auto;  width: 750px; height: 571px;">
+      <div
+        style="float: left; width: 33.3%; box-sizing: border-box; padding: 20px;">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi minus neque, ab omnis atque ex facere aperiam
+        debitis, excepturi eius aliquam est, possimus non reiciendis nam assumenda aliquid. Ea, nulla. Tracatra
+      </div>
+      <div
+        style="float: left; width: 33.3%; box-sizing: border-box; padding: 20px;">
+        Culpa quisquam recusandae explicabo aspernatur aperiam unde? Ut illum qui quia velit soluta rem tempore nobis quos
+        delectus? Qui maiores vero nesciunt distinctio aliquid velit labore quia beatae veniam ullam.
+      </div>
+      <div
+        style="float: left; width: 33.3%; box-sizing: border-box; padding: 20px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aspernatur? Neque ex repellat numquam modi
+        cumque nobis. Nulla facere esse quibusdam laboriosam neque et quidem qui dolor eius, placeat cumque?
+      </div>
+    </div>
+  </div>
+    <!-- Este div despeja el float si no sse seguiría usando debajo-->
+    <div style="clear: both;"></div>
+
+    <p>Ejercicio leccion 25 maquetacion float: left. Hay que crear una capa contenedora que envuelva a otras tres. Y de esas tres la central envolvera a otras tres.</p>
+      <img src="./maquetacionFloat.png" alt="" style="width: 300px; height: 150px;">  
+    <div style="background-color: black; margin: auto; width: 1200px; height: 600px;">
+      <div style="background-color: red; float: left; width: 100px; height: 600px;"></div>
+      <div style="background-color: pink; float: left; width: 1000px; height: 600px;">
+        <div style="background-color: aqua; width: 1000px;height: 100px;"></div>
+        <div style="background-color: rgb(13, 224, 66); width: 1000px;height: 400px;"></div>
+        <div style="background-color: rgb(252, 12, 180); width: 1000px;height: 100px;"></div>
+      </div>
+      <div style="background-color: blue; float: left; width: 100px; height: 600px;"></div>      
+      <div style="clear: both;"></div>
+    </div>
+
+</div> <!-- div ultimo -->
+</body>
+</html>
+
+<!--  https://www.pexels.com/es-es/ o https://pixabay.com/ fotos free  -->
+<!-- ul>li*4>a[href="#"]>img
+
+creador paginas wordpres: 
+s-q5s25anpklf3l.eu1.wpsandbox.org
+
+Pablo Monteserín Fernández
+13:52
+pablomonteserin.com/res/regalitos
+
+Pablo Monteserín Fernández
+13:56
+wpsandbox.net
+-->

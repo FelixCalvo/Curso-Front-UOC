@@ -1,0 +1,61 @@
+*{
+  /*margin: 0;
+  padding: 0;*/
+  box-sizing: border-box; /* evita que se añadan los anchos de un padding a la capa(div) que lo envuelve. */
+}
+
+body{
+  background-color: rgb(197, 216, 237);
+  font-family: sans-serif;
+}
+
+.contenedora{
+  width: 1024px;
+  margin: auto;
+}
+
+h1{
+  text-align: right;
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2rem;
+  /*padding: 20px 0 0 0;*/
+}
+
+/*
+p{
+  margin-top: 20px;
+}
+  */
+
+.azulLetraGrande{
+  font-size: 3rem;
+  color: blue;
+  font-style: italic;
+}
+
+.fondoWhiteColorGreen{
+  color: rgb(0, 128, 17);
+  background-color: white;
+}
+
+.colorRed{
+  color: rgb(166, 41, 41);
+  font-weight: bold;
+}
+
+.subrayadoArribaAbajo{
+  /*hacemos el subrayado de la parte de arriba y abajo, Se puede hace de dos maneras, con border-top/bottom y con el text-decoration*/
+  /*text-decoration: underline overline;*/
+  border-top: 1px solid rgb(166, 41, 41);
+  border-bottom: 1px solid rgb(166, 41, 41);
+  color: rgb(166, 41, 41);
+}
+
+
+
+/*
+HELP:
+Tipos de text-decoration --> https: //www.w3schools.com/cssref/playdemo.php?filename=playcss_text-decoration*/

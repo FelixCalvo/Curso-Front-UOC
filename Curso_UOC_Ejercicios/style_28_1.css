@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* evita que se añadan los anchos de un padding a la capa(div) que lo envuelve. */
+}
+
+.container{
+  width: 1200px;
+  background-color: rgb(250, 198, 157);
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+.box{
+  padding: 10px;
+  width: 900px;
+  margin: auto;
+}
+
+.separacionTop{
+  margin-top: 15px;
+}
+
+.azulMarino{
+  background-color: #8ad1c1;
+  border: 3px solid rgb(133, 133, 133);
+}
+
+.azulCielo{
+  background-color: rgb(224, 224, 224);
+  border: 3px dotted;
+}
+
+.blanco{
+  background-color: rgb(255, 255, 181);
+  border: 3px solid rgb(255, 255, 0);
+}
+
+.barraDoble{
+  background-color: rgb(224, 224, 224);
+  border: 3px double;
+}
+
+.punteado{
+  background-color: rgb(224, 224, 224);
+  border: 3px dashed;
+}
+
+/*margin: 20px auto; Centro horizontal con margen superior de 20px */
+
