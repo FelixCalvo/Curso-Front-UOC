@@ -21,4 +21,12 @@
 
 h1 {
   text-align: center;
+  text-shadow: 20px 5px 5px rgb(247, 119, 84);
+  font-family: miFuente;
 }
+
+@font-face {
+  font-family: miFuente;
+  src: url(fuente.ttf);
+}
+
