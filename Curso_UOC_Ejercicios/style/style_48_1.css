@@ -1,0 +1,207 @@
+@font-face {
+  font-family: miFuente;
+  src: url(../fuentes/fuente.woff);
+}
+
+body {
+  margin: 0;
+  width: 1500px;
+  font-family: miFuente;
+}
+
+.container {
+  margin: auto;
+  width: 1200px;
+}
+
+.menu { 
+
+}
+
+nav {
+  width: 1200px;  
+  background-color: rgb(31, 128, 108);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  gap: 70px;
+}
+
+ul li {
+  padding: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold ;
+}
+
+ul li:hover {
+background-color: rgb(81, 150, 150);
+}
+
+.fixed {
+  position: fixed;
+}
+
+.capa_1 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  background-color: white;
+  
+}
+
+.capa_1 a {
+  color: rgb(247, 119, 84);
+}
+
+.gris {
+  text-align: center;
+  color: white;
+  background-color: rgb(51, 51, 51);
+  padding: 100px;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 0;
+}
+
+.gris h2 {
+  margin: 0;
+  font-size: small;
+}
+
+.foto_verde {
+background: url(../img/pic01.jpg);
+width: 1200px;
+height: 500px;
+}
+
+.dos_colum {
+  display: flex;
+  padding: 30px;
+}
+
+.col_izq {
+  width: 66%; 
+  padding-left: 10px;
+  color: rgb(98, 112, 133);
+  /* background-color: rgb(235, 198, 198); */
+}
+
+.col_izq h2 {
+  color: rgb(37, 161, 134);
+}
+
+.trans {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.col_der {
+  display: flex;
+  flex-direction: column;  
+  /* background-color: rgb(192, 145, 145); */
+  width: 36%;
+  align-items: star;
+  padding-left: 40px;
+}
+
+.col_der a {
+  color: black;  
+  padding-bottom: 15px;
+}
+
+.tres_col {
+  width: 1200px;
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  padding: 30px 0px 30px 0px; 
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.c3D {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: justify;
+  width: 34%;
+}
+
+.c3D p {
+  padding-right: 50px;
+}
+
+.c3L, .c3C {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  padding-left: 40px;
+}
+
+.c3L,.c3C,.c3D h2{
+  color: white;
+}
+
+.c3L a, .c3C a {
+padding-bottom: 15px;
+color: rgb(98, 112, 133);
+}
+
+.enlaces3colum{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.facebook, .twiter, .youtube, .pinterest, .google, .rss, .town{
+  width: 40px;
+  height: 40px;
+  margin: 10px 25px 10px 0;
+}
+
+.facebook {
+  background: url(../img/fbck.png) no-repeat center center;
+}
+
+.google {
+  background: url(../img/gplus.png) no-repeat center center;
+}
+
+.pinterest {
+  background: url(../img/pinterest.png) no-repeat center center;
+}
+
+.twiter {
+  background: url(../img/twiiterblue.png) no-repeat center center;
+}
+
+.youtube {
+  background: url(../img/youtube.jpg) no-repeat center center;
+}
+
+.rss {
+  background: url(../img/rss-80x80.png) no-repeat center center;
+}
+
+.town {
+  background: url(../img/tumbler.png) no-repeat center center;
+}
+
+.footer {
+  background-color: rgb(22, 161, 133);
+}
+
+.pie {
+  margin: 0px;
+  padding: 70px;
+  text-align: center;
+  color: white;
+}
+
