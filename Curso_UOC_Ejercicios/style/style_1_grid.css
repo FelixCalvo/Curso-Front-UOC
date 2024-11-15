@@ -1,3 +1,6 @@
+body {
+  background: lightgreen;
+}
 
 
 .container {
@@ -5,6 +8,7 @@
   border: 3px solid rgb(10, 10, 9);
   display: grid;
   /* grid-template-columns: repeat(3, 100px); */
+  /* esto hace que la primera columna sea como minimo de 500px, menos no. */
   grid-template-columns: minmax(500px, 1fr) 1fr 1fr;
   grid-template-rows: repeat(3, 100px);  
 }
@@ -16,16 +20,140 @@
   text-align: center;
 }
 
+.box {
+  background: lightsalmon;
+  border: 3px solid rgb(10, 10, 9);
+  display: grid;
+  grid-template-columns: 3fr 1.5fr 1fr 1fr;
+}
+
+.box div {
+  border: 2px solid#09f;
+  background: lightblue;
+  border-radius: 15px;
+  text-align: center;
+}
+
 .fotos {
   display: grid;
+  /* autofill --> coloca columnas cada 200px (tamaño MINIMO) si no puede ir poniendo columnas de 200 va ajustando el tamaño de la o las columnas a 1fr el MAXIMO(por default las tres iguales o las columnas que sean). Ejemplo 450px de ancho pantalla --> pondria dos columnas de 225 px hasta que hubiera 600px de ancho para poder podr la tercera.*/
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px 20px;
-  column-gap: 10px;
-  row-gap: 30px;
-  padding: 20px
+  /* gap: 20px 20px; */
+  /* column-gap: 10px; */
+  /* row-gap: 30px; */
+  /* padding: 20px */
 }
 
 .fotos img { 
   width: 100%;
   border-radius: 8px;
+}
+
+.max_width {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.max_width img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.auto-filas {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) 1fr 1fr ;
+  grid-auto-rows: 50px;
+  /* ajustar espacios entre cajas */
+  gap: 20px;
+  padding: 20px ;
+  max-width: 1200px;
+  margin: 0 auto;
+  background:lightsalmon; 
+  border-radius: 6px;
+}
+
+.auto-filas div {
+  background: lightblue;
+  border: 2px solid #09f;
+  border-radius: 6px;
+}
+
+/* ultimo hijo de los div */
+/* lo movemos de su posicion inicial hacia el centro */
+.auto-filas div:last-child {
+  background: rgb(230, 127, 127);
+  /* aqui le decimos que posicion tiene en la cuadricula centro por ejemplo */
+  /* grid-column-start: 2;
+  grid-column-end: 3; */
+
+  /* hay que poner donde empieza y donde acaba las 4 coordenadas */
+  /* grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 4; */
+  /* es lo mismo que el codigo de arriba */
+  grid-column: 1 / -1;/*junta las 3 columnas de la cuarta fila (ultimo hijo --> 7, va del 1 al -1 (de punta a punta) pinchar en el grid en inspeccionar navegador*/ 
+
+}
+
+.auto-filas div:nth-child(5){
+  background: lightslategray;
+  border: 2px solid #09f;
+  /*tambien se puede juntar asi las filas y columnas*/
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.auto-filas div:nth-child(3) {
+  background: lightseagreen;
+  border: 2px solid #09f;
+  /* en los numeros del inspector veremos que posicion tiene. El primer div será grid-colum-star 1 y grid-colum-end: 2; y la fila sera el grid-row-start: 1 y grid-row-end: 2; */
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.auto-filas div:nth-child(2) {
+  background: lightseagreen;
+  border: 2px solid #09f;
+  /* en los numeros del inspector veremos que posicion tiene. El primer div será grid-colum-star 1 y grid-colum-end: 2; y la fila sera el grid-row-start: 1 y grid-row-end: 2; */
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+/* experimento de grid para crear la cuadrícula y flex box para alinear elementos internos (cuadrados azules)*/
+
+.grid_flex {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) 1fr 1fr;
+  grid-auto-rows: 50px;
+  /* ajustar espacios entre cajas */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: lightslategray;
+  border-radius: 6px;
+}
+
+.grid {
+  background: lightblue;
+  border: 2px solid #09f;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}
+
+.flex {
+  width: 25px;
+  height: 25px;
+  background: #09f;
+  padding: 5px
 }
