@@ -535,22 +535,22 @@
 
 // Hacer una función contadorDeLetras2 que reciba como parámetro de entrada dos cadenas de texto y una letra y devuelva la cadena de texto en la que dicha letra esta más presente. Utilizar para ello un bucle for. No tener en cuenta si la letra pasada como parámetro esta en mayúsculas o minúsculas.
 
-const contadorDeLetras2 = (str1, str2, letra) =>{
-  let numeroVecesStr1 = 0;
-  let numeroVecesStr2 = 0;
-  str1 = str1.toLowerCase();
-  str2 = str2.toLowerCase();
-  letra = letra.toLowerCase();
-  for(let i = 0; i<str1.length; i++){
-    if( str1[i] === letra) numeroVecesStr1 ++;
-  }
-  for(let i = 0; i<str2.length; i++){
-    if( str2[i] === letra) numeroVecesStr2 ++;
-  }
-  if (numeroVecesStr1 > numeroVecesStr2) return str1;
-  return str2;
-}
-console.log(contadorDeLetras2('holaMon', 'adeoooouMon', 'o'));
+// const contadorDeLetras2 = (str1, str2, letra) =>{
+//   let numeroVecesStr1 = 0;
+//   let numeroVecesStr2 = 0;
+//   str1 = str1.toLowerCase();
+//   str2 = str2.toLowerCase();
+//   letra = letra.toLowerCase();
+//   for(let i = 0; i<str1.length; i++){
+//     if( str1[i] === letra) numeroVecesStr1 ++;
+//   }
+//   for(let i = 0; i<str2.length; i++){
+//     if( str2[i] === letra) numeroVecesStr2 ++;
+//   }
+//   if (numeroVecesStr1 > numeroVecesStr2) return str1;
+//   return str2;
+// }
+// console.log(contadorDeLetras2('holaMon', 'adeoooouMon', 'o'));
 // Escribe una función llamada indexOfIgnoreCase que reciba dos cadenas de texto y devuelva la posición de la primera ocurrencia de la segunda cadena de texto en la primera. La función no debería tener en cuenta mayúsculas y minúsculas.
 
 // Por ejemplo:
