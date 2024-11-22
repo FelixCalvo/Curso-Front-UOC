@@ -390,7 +390,7 @@
 
 
 //  const trozo = (strings, a, b) => strings.substring(a, b);
-// console.log(trozo('wonderful day', 3, 7));
+// console.log(trozo('wonderful day, 7));
 
 //  Escribe una función llamada toCase que reciba como parámetro de entrada una cadena de texto y devuelva esa misma cadena de texto en minúsculas, un guión medio y de nuevo esa misma cadena de texto en mayúsculas.
 
@@ -408,12 +408,12 @@
 
 // Por ejemplo, la llamada a la función:
 
-// shortcut('Amnesty', 'International');
+// shortcut('AmnestyInternational');
 // Copy
 // Debería devolver «AI».
 
 // const shortcut = (str1, str2) => str1[0] +str2[0];
-// console.log(shortcut('hola', 'adios'));
+// console.log(shortcut('holaadios'));
 
 //  Escribe una función llamada firstChar que recibe como parámetro de entrada una cadena de texto y devuelva la primera letra que no sea un espacio.
 
@@ -436,7 +436,7 @@
 // }
 
 
-// console.log(devuelveMasLarga('prisssssssmerTexto', 'segundoTexto'));
+// console.log(devuelveMasLarga('prisssssssmerTextosegundoTexto'));
 
  
 // Hacer una función devuelveMasLarga2 que reciba como parámetro de entrada tres cadenas de texto y devuelva la más larga. Si no hay una única cadena más larga, devolveremos el texto No hay una única cadena más larga.
@@ -449,7 +449,7 @@
 //     return provisional;
 //  }
 
-//  console.log(devuelveMasLarga2('pla1','la2', 'las'));
+//  console.log(devuelveMasLarga2('pla1a2las'));
 
 // Hacer una función generarNombre que reciba como parámetros de entrada tres cadenas de texto. Si la longitud de alguna cadena es menor que cinco, la función debe devolver el texto ‘error’. Si ninguna cadena tiene menos de 5 letras, devolver una nueva palabra utilizando las tres primeras letras de cada palabra
 
@@ -457,7 +457,7 @@
 //     if (str1.length < 5 || str2.length < 5 || str3.length < 5) return 'error';
 //     return str1[0] + str2[0] + str3[0];
 // }
-// console.log(generarNombre('paffco', 'felix', 'franco'));
+// console.log(generarNombre('paffcofelixfranco'));
 
 // Hacer una función generarNombre2 que reciba como parámetros de entrada tres cadenas de texto. Si la longitud de alguna cadena es menor que cinco, la función debe devolver el texto ‘error’. Si ninguna cadena tiene menos de 5 letras, devolver una nueva palabra utilizando la última letra de cada palabra.
 
@@ -465,7 +465,7 @@
 //     if (str1.length < 5 || str2.length < 5 || str3.length < 5) return 'error';
 //     return str1.slice(-1) + str2.slice(-1) + str3.slice(-1);
 // }
-// console.log(generarNombre('paffco', 'felix', 'franco'));
+// console.log(generarNombre('paffcofelixfranco'));
 
 // Hacer una función generarNombre3 que reciba como parámetros de entrada tres cadenas de texto. Si la longitud de alguna cadena es menor que cinco, la función debe devolver el texto ‘error’. Si ninguna cadena tiene menos de 5 letras, devolver una nueva palabra utilizando las tres últimas letras de cada palabra.
 
@@ -474,7 +474,7 @@
 //     if (str1.length < 5 || str2.length < 5 || str3.length < 5) return 'error';
 //     return str1.slice(-3) + str2.slice(-3) + str3.slice(-3);
 // }
-// console.log(generarNombre3('paffco', 'felix', 'franco'));
+// console.log(generarNombre3('paffcofelixfranco'));
 
 // Hacer una función tieneLetra que reciba como parámetro de entrada una cadena de texto y una letra y devuelva true si la letra esta presente en la palabra y false si no lo esta.
 
@@ -485,7 +485,7 @@
 //   if(string1.includes(letra)) return true; return false;
   
 // }
-// console.log(tieneLetra('felix', 'f'));
+// console.log(tieneLetra('felixf'));
 
 // Realizar la evaluación del ejercicio anterior sin tener en cuenta si la letra pasada como parámetro esta en mayúsculas o minúsculas
 
@@ -493,10 +493,10 @@
 
 
 // const crearPalabra = (letra, num) => letra.repeat(num);
-// console.log(crearPalabra('f', 3));
+// console.log(crearPalabra('f));
 
 // const crearPalabra = (letra, num) => letra.repeat(num).toUpperCase();
-// console.log(crearPalabra('f', 3));
+// console.log(crearPalabra('f));
 
 // Hacer una función addGuiones que reciba como parámetro de entrada una cadena texto y devuelva una nueva cadena que tendrá un guion medio detrás de cada letra. Utilizar para ello un bucle for.
 
@@ -520,7 +520,7 @@
 //   }
 //   return numeroVeces;
 //   }
-// console.log(contadorDeLetras('holaMon', 'o'));
+// console.log(contadorDeLetras('holaMono'));
 
 // const contadorDeLetras = (str1, letra) =>{ 
 //   let numeroVeces = 0;
@@ -531,7 +531,7 @@
 //   }
 //   return numeroVeces;
 //   }
-// console.log(contadorDeLetras('holaMon', 'O'));
+// console.log(contadorDeLetras('holaMonO'));
 
 // Hacer una función contadorDeLetras2 que reciba como parámetro de entrada dos cadenas de texto y una letra y devuelva la cadena de texto en la que dicha letra esta más presente. Utilizar para ello un bucle for. No tener en cuenta si la letra pasada como parámetro esta en mayúsculas o minúsculas.
 
@@ -549,8 +549,10 @@
 //   }
 //   if (numeroVecesStr1 > numeroVecesStr2) return str1;
 //   return str2;
-// }
-// console.log(contadorDeLetras2('holaMon', 'adeoooouMon', 'o'));
+// } //return numeroVecesStr1 > numeroVecesStr2 ? str1 : str2;
+// console.log(contadorDeLetras2('holaMonadeoooouMono'));
+
+
 // Escribe una función llamada indexOfIgnoreCase que reciba dos cadenas de texto y devuelva la posición de la primera ocurrencia de la segunda cadena de texto en la primera. La función no debería tener en cuenta mayúsculas y minúsculas.
 
 // Por ejemplo:
@@ -571,7 +573,7 @@
 //   return 'No hay coincidencias.';
 // }
 
-// console.log(indexOfIgnoreCase('holaMon', 'pp'));
+// console.log(indexOfIgnoreCase('holaMonpp'));
 
 // Escribe una función llamada firstWord que reciba como parámetro de entrada una cadena de texto y devuelva la primera palabra de esa cadena. La primera palaba de la cadena serán todos los caracteres que hay hasta el primer espacio.
 
@@ -587,3 +589,262 @@
 // }
 
 // console.log(firstWord('wonderful day'));
+
+//  Obtener un número aleatorio entre 5 y 7.
+
+// const numeroAleatorio = Math.random() * (2) + 5;
+// console.log(Math.floor(numeroAleatorio));
+
+// Partiremos de una constante que almacene tu nombre. Luego, crearemos un número al azar dentro del rango de letras que contiene tu nombre. Ese número será la posición de la letra aleatoria de tu nombre que queremos obtener.
+
+// Tendrás que usar los siguientes códigos:
+
+// Math.floor(Math.random() * (MAX - MIN + 1)) + MIN;
+// nombre.charAt();
+// nombre.length;
+// Copy
+// Ver código fuente
+// Ver explicación
+// Pasos para resolver el ejercicio:
+
+// Declaramos una constante con nuestro nombre.
+// Calculamos un número aleatorio en un rango comprendido entre 0 y el número de letras de tu nombre.
+// Utilizamos ese número aleatorio para obtener la letra de tu nombre que ocupa esa posición.
+// Mostramos la letra en la consola.
+
+// const name2 = 'felix';
+// const number = Math.floor(Math.random() * name2.length);
+// console.log(name2.charAt(number) + ' numero: ' + number);
+
+
+// console.log(parseInt(-4.7)); // --> -4 para conseguier el numero entero
+
+// window.alert("Hola, que tal?");
+// const nombre = window.prompt("Introduce un nombre por favor");
+// const respuesta = window.confirm("Los datos introducidos ¿Son correctos?");
+// if(respuesta) console.log('Correcto!!');
+// else console.log('tururu');
+
+// Los valores que recogemos de un prompt son siempre texto, aunque escribamos un número. Para poder operarlos en una suma, debemos convertilos a número, ya que el signo de sumar sirve para sumar números y para concatenar texto, y si el valor recogido es un texto, en lugar de sumarlo lo vamos a concatenar. Para convertir el valor recogido de un prompt en número, podemos hacer varias cosas:
+
+// const n1 = prompt("Introduce primer número");
+// const n_1 = parseInt(n1); // Esta conversión a número nos lo deja como entero, eliminando los decimales.
+// const n2 = prompt("Introduce segundo número");
+// const n_2 = Number(n2);
+// const calculoRealizar = prompt("Introduce calculo a realizar: +,-,*,/");
+// let resultado = 0;
+// if(calculoRealizar === '+') resultado + n_2;
+// else if(calculoRealizar === '-') resultado = n_1 - n_2;
+// else if(calculoRealizar === '*') resultado = n_1 * n_2;
+// else if(calculoRealizar === '/') resultado / n_2;
+// alert('El resultados es: ' + resultado);
+
+// const numeroAleatorio = Math.floor(Math.random() * (5) + 1);
+// alert('Numero secreto que hay que adivinar: ' + numeroAleatorio);
+// const numeroUsuario = parseInt(prompt('Introduce un numero'));
+
+// numeroUsuario === numeroAleatorio ?  alert('Has acertado') : alert('Error');
+
+// Almacenar en una constante un número aleatorio, que será el número secreto.
+// Hacer un alert del número aleatorio.
+// Los siguientes pasos los daríamos en cada una de las iteraciones de un bucle while. Estos pasos se repetirán hasta que transcurran 3 intentos o el usuario acierte el número secreto.:
+// Recogida de un número mediante un prompt.
+// Calculo de resultado: Utilizaremos la instrucción if-else para evaluar si el número introducido coincide con el número secreto
+// Mostrar el resultado en un alert.
+// Hacemos un alert de fin del juego
+
+// const numeroAleatorio = Math.floor(Math.random() * (5) + 1);
+// alert('Numero secreto que hay que adivinar: ' + numeroAleatorio);
+// let num = 0;
+// let numeroUsuario = 0;
+// while(num < 3){
+//   numeroUsuario = parseInt(prompt('Introduce un numero'));
+//   if(numeroUsuario === numeroAleatorio) break;
+//   num ++;
+// }
+// numeroUsuario === numeroAleatorio ?  alert('Has acertado') : alert('Fallastes en tus tres intentos.');
+
+// Pasos a seguir:
+
+// Solicitamos al usuario que intruzca su DNI sin letra y lo almacenamos en una constante.
+// Hacer un alert de los datos introducidos (el dni en este caso).
+// Creamos una función para obtener la letra del dni. El parámetro de entrada de esta función será el número recogido del usuario.
+// La función hará las siguientes validaciones. Si la validación es incorrecta, la función devolverá el valor null.
+// Que el número recogido como parámetro tenga 8 dígitos exactamente.
+// Que el número recogido como parámetro sea un número (y por tanto no tenga letras).
+// Si la validación ha sido correcta, la función utilizará el siguiente algoritmo para calcular la letra del DNI:
+// Dividimos el valor introducido entre 23. Almacenamos el resto de la división.
+// Utilizamos la función charAt para obtener la letra del DNI. Según el resultado, de 0 a 22, le corresponderá una letra de las siguientes:  (T, R, W, A, G, M, Y, F, P, D, X, B, N, J, Z, S, Q, V, H, L, C, K, E).
+// Llamamos a la función.
+// Mostrar el resultado: en un log
+
+// const dni = prompt('Introduce tu DNI sin letra');
+// alert('Datos introducidos: ' + dni);
+
+// const revisionDNI = (dni) => {
+//   if(dni.length !== 8 || isNaN(dni)) return null;
+//   const letra = dni % 23;
+//   const letras = ['TRWAGMYFPDXBNJZSQVHLCKE'];
+//   return letras.charAt(letra);
+// }
+// let evaluacion = revisionDNI(dni);
+// evaluacion === null ? alert('Error!!!') : alert('Tu letra es: ' + evaluacion); 
+
+//  Crea un array con cinco nombres de persona y recórrelo con un bucle for mostrando el texto «Conozco a alguien llamado 
+
+//  const nombres = ['pedro', 'juan', 'maria', 'jose', 'luis'];
+//  for(let i = 0; i < nombres.length; i++) console.log('Conozco a alguien llamado --> ' + nombres[i]);
+
+//  Crea una función toArray que reciba dos valores y devuelva un array con estos dos valores.
+
+// Por ejemplo, la llamada:
+
+// toArray(5,9);
+// Copy
+// debería devolver el array [5, 9]
+
+// const toArray = (num1, num2) => [num1, num2];
+// console.log(toArray(5, 9));
+
+// Recorrer la siguiente lista con un bucle imprimiendo el doble de cada número:
+
+// const numbers = [1,9,3,8,5,7];
+
+// for(let i = 0; numbers.length>i; i++) console.log(numbers[i]*2);
+
+//  Escribe una función llamada getFirstElement que reciba un array y devuelva el primer elemento.
+
+// Por ejemplo:
+// getFirstElement([1, 2]);
+// debería devolver 1.
+
+
+// const getFirstElement = array => array[0];
+// console.log(getFirstElement([1, 2]));
+
+// Escribe una función llamada setFirstElement que reciba como parámetro de entrada un array y un valor cualquiera. El valor recibido debería reemplazar lo que haya en la primera posición del array. El array debería ser devuelto.
+
+// Ejemplo:
+
+// setFirstElement([1, 2], 3);
+// Copy
+// debería devolver [3, 2]
+
+// const setFirstElement = (array, num) => {
+//   array[0] = num;
+//   return array;
+// }
+
+// console.log(setFirstElement([1, 2, 3, 4], 3));
+
+//  Escribe una función getLastElement que reciba un array como parámetro de entrada y devuelva el último elemento del array.
+
+// Por ejemplo:
+
+// getLastElement([1, 2]);
+// Copy
+// debería devolver 2.
+
+// const getLastElement = array => array[array.length-1];
+// console.log(getLastElement([1, 2]));
+
+// Contar el número de elementos positivos, negativos y que valgan cero en un array de 10 enteros. Los valores habrán sido harcodeados en un array. La salida por consola debería ser similar a esta:
+
+// const arrayNumbers = [1, 9, -3, 8, -5, 0, 3, 4, 6, -7];
+// let cantidadPositivos = 0;
+// let cantidadNegativos = 0;
+// let cantidadCeros = 0;
+// for(let i = 0; arrayNumbers.length > i; i++){
+//   if(arrayNumbers[i] > 0) cantidadPositivos ++;
+//   else if (arrayNumbers[i] < 0) cantidadNegativos ++;
+//   else cantidadCeros ++; 
+// }
+// console.log('Cantidad de positivos: ' + cantidadPositivos);
+// console.log('Cantidad de negativos: ' + cantidadNegativos);
+// console.log('Cantidad de ceros: ' + cantidadCeros);
+
+//  Leer 10 enteros harcodeados en un array y mostrar la media de los valores negativos y la de los positivos.
+
+// const arrayNumbers = [1, 9, -3, 8, -5, 0, 3, 4, 6, -7];
+// let sumaPositivos = 0;
+// let arrayPositivos = [];
+// let sumaNegativos = 0;
+// let arrayNegativos = [];
+// for(let i = 0; arrayNumbers.length > i; i++){
+//   if(arrayNumbers[i] > 0) {
+//     sumaPositivos += arrayNumbers[i];
+//     arrayPositivos.push(arrayNumbers[i]); 
+//   } else if(arrayNumbers[i] < 0) {
+    
+//     sumaNegativos += arrayNumbers[i];
+//     arrayNegativos.push(arrayNumbers[i]);   
+    
+//   }
+// }
+// console.log('Cantidad de positivos: ' + sumaPositivos/arrayPositivos.length);
+// console.log('Cantidad de negativos: ' + sumaNegativos/arrayNegativos.length);
+
+// Selecciona un elemento del array arr de tal forma que una variable que debes declarar llamada myData sea igual a 8.
+
+// const arr = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+//   [[10, 11, 12], 13, 14]
+// ];
+
+// const myData = arr[2][1];
+// console.log(myData);
+
+// Crear un array con cinco nombres de persona y recórrelo mostrando el texto «Conozco a alguien llamado «.
+
+// const nombres = ['pedro', 'juan', 'maria', 'jose', 'luis'];
+
+// nombres.forEach(nombre => console.log('Conozco a alguien llamado '+ nombre));
+
+// const numbers = [1,9,3,8,5,7]
+
+// numbers.forEach(number => console.log(number*2)); 
+
+
+// const numeros = [1, 9, -3, 8, -5, 0, 3, 4, 6, -7];
+// let positivos = 0;
+// let negativos = 0;
+// let ceros = 0;
+
+// numeros.forEach(number => {
+//   if(number > 0) positivos ++;
+//   else if(number < 0) negativos ++;
+//   else ceros ++;
+// });
+
+// console.log('Cantidad de positivos: ' + positivos);
+// console.log('Cantidad de negativos: ' + negativos);
+// console.log('Cantidad de ceros: ' + ceros);
+
+// const numeros = [1, 9, -3, 8, -5, 0, 3, 4, 6, -7];
+
+// let positivos = [];
+// let negativos = [];
+// let suma = 0;
+// let nega = 0;
+
+// numeros.forEach(number => {
+//   if(number > 0) {
+//     positivos.push(number);
+//     suma += number;
+//   }
+//   else if(number < 0){
+//      negativos.push(number);
+//      nega += number;
+//   }
+// });
+
+// console.log('Cantidad de positivos: ' + suma/positivos.length);
+// console.log('Cantidad de negativos: ' + nega/negativos.length);
+
+// Hacer el juego del tres en raya para dos jugadores.
+
+// En un alert del navegador dibujaremos un tablero cuadrado de 9 casillas (3 casillas por lado). Cada jugador, por turnos, irá poniendo una X o una O en las casillas, sin superponerse, hasta que uno de los dos logre poner 3 fichas iguales en línea (en vertical, horizontal o diagonal).
+
+console.log('hola mon rriidfdfdffi');
