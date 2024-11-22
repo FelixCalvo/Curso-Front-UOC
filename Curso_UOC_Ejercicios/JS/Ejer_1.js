@@ -847,4 +847,144 @@
 
 // En un alert del navegador dibujaremos un tablero cuadrado de 9 casillas (3 casillas por lado). Cada jugador, por turnos, irá poniendo una X o una O en las casillas, sin superponerse, hasta que uno de los dos logre poner 3 fichas iguales en línea (en vertical, horizontal o diagonal).
 
-console.log('hola mon rriidfdfdffi');
+// MAP:
+//  A partir de un array con cinco nombres de persona, recórrelo con un map para obtener un nuevo array con el texto «Conozco a alguien llamado » precediendo a cada nombre.
+
+//  const arrayNombresCinco = ['pedro', 'mari', 'juan', 'luis', 'pepa'];
+
+//  const nombres = arrayNombresCinco.map(n => 'Conozco a alguien llamado: ' + n);
+
+//  console.log(nombres);
+
+// Escribe un objeto llamado miPerro que tenga las siguientes propiedades: piernas, colas, amigos. Dale valor a estas propiedades y haz tres console.log(), uno por cada una de las tres propiedades
+
+// const miPerro = {
+//   'piernas': 4,
+//   'colas': 1,
+//   'amigos': 3
+// };
+
+// console.log(miPerro.piernas);
+// console.log(miPerro.colas);
+// console.log(miPerro.amigos);
+
+// const testObj = {
+//     "ojos": 2,
+//     "nombre": "Pablo",
+//     "piernas": 2
+// };
+
+// // Sólo hay que hacer modificaciones por debajo de esta línea 
+// const ojos = testObj.ojos;      // Cambiar esta línea
+// const nombre = testObj.nombre;    // Cambia esta línea
+
+// console.log(ojos); // Debería mostrar: 2
+// console.log(nombre); // Debería mostrar: "Pablo"
+
+// 3. Utilizar la constante playerNumber para acceder a la propiedad correspondiente del objeto testObj.
+
+// const testObj = {
+//     12: "Namath",
+//     16: "Montana",
+//     19: "Unitas"
+// };
+
+// const playerNumber = 19;
+// const player = testObj[playerNumber];   // Cambia esta línea
+
+// console.log(player); // Debería mostrar: "Unitas"
+
+// 4. Accede a la propiedad nombre para cambiar su valor de Coder a HappyCoder.
+
+// const myDog = {
+//     "nombre": "Coder",
+//     "piernas": 4,
+//     "colas": 1,
+// };
+
+// // Modifica esta línea con el código necesario
+// console.log('Happy' + myDog.nombre); // Debería mostrar: "HappyCoder"
+
+// function phoneticLookup(valor) {
+//   const lookup = {
+//     "alpha": "Adams",
+//     "bravo": "Boston",
+//     "charlie": "Chicago",
+//     "delta": "Denver",
+//     "echo": "Easy",
+//     "foxtrot": "Frank"
+//   };
+
+//   return lookup[valor];
+// }
+
+// const valor = phoneticLookup("charlie")
+// console.log(valor); // Chicago
+
+// const myMusic = [
+//     {
+//         "artista": "Shakira",
+//         "titulo": "Piano Man",
+//         "formatos": [
+//             "CD",
+//             "8T",
+//             "LP"
+//         ],
+//         "premios": true
+//     }
+// ];
+
+// const myMusic2 = [
+//     {
+//         "artista": "pachi",
+//         "titulo": "Pjkkjkjjk",
+//         "formatos": [
+//             "CD",
+//             "8T",
+//             "LP"
+//         ],
+//         "premios": true
+//     }
+// ];
+
+// console.log(myMusic2);
+
+
+// const myStorage = {
+//     "car": {
+//         "inside": {
+//             "glove box": "maps",
+//             "passenger seat": "crumbs"
+//         },
+//         "outside": {
+//             "trunk": "jack"
+//         }
+//     }
+// };
+
+// const gloveBoxContents = myStorage.car.inside["glove box"]; // Cambia esta línea
+// console.log(gloveBoxContents); // Debería valer: "maps"
+
+// const myPlants = [
+//     {
+//         type: "flowers",
+//         list: [
+//             "rose",
+//             "tulip",
+//             "dandelion"
+//         ]
+//     },
+//     {
+//         type: "trees",
+//         list: [
+//             "fir",
+//             "pine",
+//             "birch"
+//         ]
+//     }
+// ];
+
+// const secondTree = myPlants[1].list[1];
+// console.log(secondTree); // Debería mostrar: ["fir", "pine", "birch"]
+
+console.log('hola')

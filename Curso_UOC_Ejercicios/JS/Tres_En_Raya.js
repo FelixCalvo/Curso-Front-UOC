@@ -75,5 +75,8 @@ document.querySelectorAll('.tablero div').forEach(div => {
 //llenamos de doses la posicion de las casillas (libres por seleccionar)
 for(i = 0; i< 9; i ++) tablero[i] = 2;
 
-
+/*
+Poner los jugadores como booleanos se podria:
+player1 = !player1 --> de true pasa a false.
+*/
 
