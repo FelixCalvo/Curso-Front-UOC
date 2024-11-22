@@ -6,3 +6,4 @@ document.querySelectorAll('.teclas').forEach(tecla => {
   tecla.onclick = cambiarColor();
 });
 
+
