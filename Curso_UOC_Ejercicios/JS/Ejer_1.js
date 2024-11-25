@@ -987,4 +987,135 @@
 // const secondTree = myPlants[1].list[1];
 // console.log(secondTree); // Debería mostrar: ["fir", "pine", "birch"]
 
-console.log('hola')
+// const users = [
+// 	{
+// 		"name" : "Paco",
+// 		"isActive" : false,
+// 		"age": 18
+// 	},
+// 	{
+// 		"name" : "Laura",
+// 		"isActive" : false,
+// 		"age": 21
+// 	},
+// 	{
+// 		"name" : "Raquel",
+// 		"isActive" : false,
+// 		"age": 15
+// 	},
+// 	{
+// 		"name" : "Juan",
+// 		"isActive" : true,
+// 		"age": 17
+// 	},
+// 	{
+// 		"name" : "Alberto",
+// 		"isActive" : false,
+// 		"age": 50
+// 	},
+// 	{
+// 		"name" : "Rodolfo",
+// 		"isActive" : true,
+// 		"age":7
+// 	},
+// ];
+
+// const choosedUser = users.find(nombre => nombre.name === 'Juan');
+
+// console.log(choosedUser.age); 
+
+// const users = [
+// 	{
+// 		"name" : "Paco",
+// 		"isActive" : false,
+// 		"edad": 18
+// 	},
+// 	{
+// 		"name" : "Laura",
+// 		"isActive" : false,
+// 		"edad": 21
+// 	},
+// 	{
+// 		"name" : "Raquel",
+// 		"isActive" : false,
+// 		"edad": 15
+// 	},
+// 	{
+// 		"name" : "Juan",
+// 		"isActive" : true,
+// 		"edad": 17
+// 	},
+// 	{
+// 		"name" : "Alberto",
+// 		"isActive" : false,
+// 		"edad": 50
+// 	},
+// 	{
+// 		"name" : "Rodolfo",
+// 		"isActive" : true,
+// 		"edad":7
+// 	},
+// ];
+
+// // const result = users.filter(activo => (activo));
+// // console.log(result)
+// const mayores = users.filter(user => user.edad > 18);
+// // console.log('mayores --> ' +mayores.map(p => p.name));
+// console.log('mayores --> ' + mayores.map(p => p.name));
+
+// const numeros = [1, 2, 3];
+
+// //el primero es donde se van acumulando las iteraciones, en este caaso sumamos. Puede concatenar strigs.
+
+// const suma = numeros.reduce((acumulado, numero) => acumulado + numero) / numeros.length;
+// console.log(suma); 
+
+let characters;
+let collectedCharacters = [];
+let collectedCharacters2 = [];
+
+fetch('https://swapi.py4e.com/api/people')
+.then(res => res.json())
+.then(data => {
+   characters = data.results;
+   // Aquí ejecutaremos las llamadas a las funciones que definiremos más arriba
+   console.log(characters);
+   getWomansName();
+   getSmallerPeople();
+   sumaDePeso();
+});
+
+const getWomansName = () => {
+    const personajes = characters.filter(person => person.gender === 'female');
+    console.log('nombre personaje femenino --> ' + personajes.map(p => p.name));
+};
+
+// Crear un método getSmallerPeople() que devuelva un array con los personajes de StarWars restando a cada uno de ellos diez centímetros de altura. Utilizaremos un map para recorrer el array de personajes y el spread operator para conservar las propiedades del objeto original.
+
+const getSmallerPeople = () => {
+    const personajes = characters.map(person => ({...person, height: person.height}));
+    const personajes2 = characters.map(person => ({...person, height: person.height - 10}));
+    console.log('personajes bajos --> ' + personajes.map(p => p.height));
+    console.log('personajes bajos -10 cm --> ' + personajes2.map(p => p.height)); 
+}
+
+// Crear un método llamado sumaDePeso() que utilizando reduce, calcule la suma del peso de los personajes de starwars.
+
+
+const sumaDePeso = () => {
+  const sumaPesos = characters.reduce((total, peso) => total + parseInt(peso.mass), 0);
+  //el cero es para que empiece el total en cero
+  console.log('Suma de pesos: ' + sumaPesos);
+}
+
+
+
+
+
+
+
+
+
+
+
+  
