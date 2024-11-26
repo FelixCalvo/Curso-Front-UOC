@@ -1083,6 +1083,16 @@ fetch('https://swapi.py4e.com/api/people')
    getWomansName();
    getSmallerPeople();
    sumaDePeso();
+   mediaDeAltura();
+   collectByIndex(3);
+   collectByName('Leia Organa');
+   removeByName('Leia Organa');
+   getCharacterFilms('Leia Organa');
+   collectByName2('Leia Organa');
+   collectByName2('Darth Vader');
+  //  collectByName2('Obi-Wan Kenobi');
+   mediaDeAltura2();
+   removeByName2('Leia Organa')
 });
 
 const getWomansName = () => {
@@ -1108,14 +1118,91 @@ const sumaDePeso = () => {
   console.log('Suma de pesos: ' + sumaPesos);
 }
 
+// Crear un método llamado mediaDeAltura() que utilizando reduce, calcule la media de altura de los personajes de starwars.
 
+const mediaDeAltura = () => {
+  const mediaAlturaPersonajes = (characters.reduce((total, altura) => total + altura.height, 0)) / characters.length;
+  console.log('Altura media ' + mediaAlturaPersonajes);
+}
 
+// Crear un método llamado collectByIndex(index) que recibirá como parámetro de entrada la posición del personaje que queremos seleccionar en el array characters. Este personaje seleccionado lo añadiremos a un array declarado globalmente llamado collectedCharacters. Para esta última parte utilizaremos el método push().
 
+const collectByIndex = (index) => {
+  collectedCharacters.push(characters[index]);
+  console.log('personaje seleccionado --> ' + collectedCharacters[0].name);
+  console.log('personaje seleccionado --> ' + collectedCharacters.map(p => p.name));
+  // Mostrar por consola las claves y valores del primer elemento
+  const primerElemento = collectedCharacters[0];
+  for (const clave in primerElemento) {
+    console.log(`${clave}: ${primerElemento[clave]}`);
+    // console.log(clave + ' ' + primerElemento[clave]);
+  }
+}
 
+// Crear un método llamado collectByName(characterName) que recibirá como parámetro de entrada el nombre del personaje que queremos coleccionar y lo añadirá a un array declarado globalmente llamado collectedCharacters. Utilizaremos los métodos push() y find().
 
+const collectByName = (characterName) => {
+let persona = characters.find(elemento => elemento.name === characterName);
+collectedCharacters.push(persona);
+console.log('personaje seleccionado por nombre --> ' + persona.name);
+} 
 
+// Crear un método llamado removeByName(characterName) que elimine del array collectedCharacters los personajes cuyo nombre sea characterName. Para ello, utilizando filter, extraeremos del array collectedCharacters los personajes cuyo nombre no coincide con el parámetro recibido.
 
+const removeByName = (characterName) => {
+  const personajes = characters.filter(person => person.name !== characterName);
+  console.log('Personajes sin la persona eliminada --> ' + personajes.map(p => ` -${p.name}`));
+  console.log('Datos de los personajes no eliminados --> ' ,personajes);
+}  
 
+// Crear un método llamado getCharacterFilms(characterName) que reciba como parámetro el nombre de un personaje y muestra las urls de las películas en las que ha intervenido.
 
+const getCharacterFilms = (characterName) => {
+  const personaje = characters.find(person => person.name === characterName);
+  console.log('Peliculas en las que ha intervenido --> ' + personaje.films);
+}
 
-  
+//  Crear un método llamado collectByName2(characterName) que recibirá como parámetro de entrada el nombre del personaje que queremos coleccionar y lo añadirá a un array declarado globalmente llamado collectedCharacters2. Cada objeto añadido a este array tendrá una propiedad llamada amount, de tal forma que si añadimos varias veces el mismo objeto, en lugar de que ese objeto aparezca varias veces, aparecerá una sola vez, pero con la propiedad amount aumentada el número de veces que fue añadido. Utilizaremos los métodos push() y find().
+
+const collectByName2 = (characterName) => {
+  // Existe personaje en array json?
+  const personaje = characters.find(person => person.name === characterName);
+  // Existe personaje en array collectedCharacters2?
+  const personajeNewArray = collectedCharacters2.find(person => person.name === characterName);
+
+  if (personaje) {
+    if (personajeNewArray) {
+      // Si el personaje ya está en collectedCharacters2, incrementa la propiedad amount
+      personajeNewArray.amount += 1;
+    } else {
+      // Si el personaje no está en collectedCharacters2, añade el personaje con amount = 1
+      const nuevoPersonaje = { ...personaje, amount: 1 };
+      collectedCharacters2.push(nuevoPersonaje);
+      console.log(`Valor de amount --> ${nuevoPersonaje.amount}`);
+    }
+    console.log('*********************************************************')
+    // Mostrar el array collectedCharacters2 con claves y valores
+    
+       console.log('Valores array --> ', collectedCharacters2);
+
+     console.log('*********************************************************')
+    //console.log(Object.entries(collectedCharacters2));
+  } else {
+    console.log('No existe el personaje');
+  }
+  console.log(`Numero de elementos character2: ${collectedCharacters2.length}`);
+}
+
+// Crear un método llamado mediaDeAltura2() que utilizando reduce, calcule altura media de los personajes que hay en el array collectedCharacters2.
+
+const mediaDeAltura2 = () => {
+  const mediaAlturaPersonajes = (collectedCharacters2.reduce((total, altura) => total + parseInt(altura.height), 0)) / collectedCharacters2.length;
+  console.log('Altura media ' + mediaAlturaPersonajes);
+}   
+
+//  Crear un método llamado removeByName2(charactersName) que utilizando filter, obtenga a partir del array collectedCharacters2 los personajes cuyo nombre no coincide con el parámetro recibido.
+
+const removeByName2 = (characterName) => {
+  const personajes = collectedCharacters2.filter(person => person.name !== characterName);
+  console.log('Personajes sin la persona eliminada --> ' + personajes.map(p => `${p.name}`));
+} 

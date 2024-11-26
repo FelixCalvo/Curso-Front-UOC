@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+    <script src=".//formularios.js"></script>
+  </head>
+  <body>
+    <h1>DOM con Java Script</h1>
+    <div style="padding-bottom: 30px">
+      <label for="euros">Euros:</label>
+      <input type="text" id="euros" placeholder="Escribe una cantidad." />
+      <p>Dolares:<span id="resultado"></span></p>
+      <button type="button" onclick="convertir()">BOTON</button>
+    </div>
+    <div style="padding-bottom: 30px">
+      <label for="grado">Grados:</label>
+      <input type="text" id="grados" placeholder="Escribe grados." />
+      <p>Grados Fahrenheit:<span id="resultadoGrados"></span></p>
+      <button type="button" onclick="convertirGrados()">BOTON</button>
+    </div>
+    <div style="padding-bottom: 30px">
+      <label for="gradoF">Grados farenheit:</label>
+      <input type="text" id="gradoF" placeholder="Escribe grados farenheit." />
+      <p>Grados:<span id="resultadoGradosConvert"></span></p>
+      <button type="button" onclick="convertirFarenheit()">BOTON</button>
+    </div>
+    <div>
+      <label for="nombrecliente">Nombre del Cliente:</label>
+      <input
+        type="text"
+        placeholder="Escribe nombre Cliente"
+        id="nombrecliente"
+      />
+      <p>Material de la caja:</p>
+      <select id="material" name="material">
+        <option value="carton">Cartón</option>
+        <option value="plastico">Plástico</option>
+        <option value="madera">Madera</option>
+        <option value="metal">Metal</option>
+      </select>
+      <p>Seleccione unas dimensiones para la caja:</p>
+      <div class="option-group">
+        <label style="display: block">
+          <input type="radio" name="tamanio" value="Diminutas" checked />
+          Diminutas
+        </label>
+        <label style="display: block">
+          <input type="radio" name="tamanio" value="Medianas" /> Medianas
+        </label>
+        <label style="display: block">
+          <input type="radio" name="tamanio" value="Grandes" /> Grandes
+        </label>
+      </div>
+      <p>Comentarios:</p>
+      <textarea id="comentarios" name="comentarios" style="width: 400px">
+Que sea bonita.</textarea
+      >
+      <button style="display: block" onclick="enviarPedido()" type="submit">
+        Enviar Pedido
+      </button>
+      <textarea id="salida" style="display: block; width: 400px"></textarea>
+    </div>
+    <div>
+      <input type="text" placeholder="Escribe un numero de 0 a 5" id="numero" style="display: block"/>
+      <button type="button" onclick="adivinaNumero()"></button>
+      <textarea name="salida" id="salida"></textarea>
+    </div>
+  </body>
+</html>
