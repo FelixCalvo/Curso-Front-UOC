@@ -7,11 +7,13 @@
 document.querySelector("#btn_calcular_dni").addEventListener("click", () => {
   const dni = document.querySelector("#dni").value;
   const calcularLetraDNI = dni => {
-    const arrayLetras = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"];
-    if (dni.length !== 8) return "Números erroneos";
-    if (isNaN(dni)) return "Pon un dni";
-    const letra = arrayLetras[dni % 23];
-    return letra;
+    const letras = 'TRWAGMYFPDXBNJZSQVHLCKE';
+    if (dni.length === 8) {
+      const letra = letras[dni % 23];
+      return letra;
+    }
+    else return "D.N.I. incorrecto";
+    
   }; 
   let letra = calcularLetraDNI(dni);
   document.querySelector("#salidaletradni").value = letra;

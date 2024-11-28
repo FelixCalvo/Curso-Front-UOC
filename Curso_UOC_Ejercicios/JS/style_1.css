@@ -1,0 +1,65 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1200px;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+#lightboxContainer {
+  display: none;
+}
+
+#overlay {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#lightbox {
+  margin: 100px auto 0 auto;
+  width: 50%;
+  height: 50%;
+  padding: 16px;
+  border: 16px solid orange;
+  background-color: white;
+  overflow: auto;
+  position: relative;
+  z-index: 9999;
+}
+
+.divslider {
+  display: flex;
+  width: 280px;
+  height: 280px;
+  margin: auto;
+  overflow: hidden;
+  border: 3px solid lightcoral;
+  background-color: black;
+}
+
+.slider {
+  display: flex;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.slider div {
+  width: 280px;
+  /* Cada sección coincide con el ancho del contenedor */
+  height: 280px;
+  background-color: lightsalmon;
+  border: 1px solid lightcoral;
+  text-align: center;
+  line-height: 280px;
+  font-size: 2rem;
+}
