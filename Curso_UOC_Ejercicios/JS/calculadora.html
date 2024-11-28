@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <script src=".//calculadora.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculadora</h1>
+      <h2>Metodo 1</h2>
+      <div>
+        <label for="num1">Número 1:</label>
+        <input type="text" id="num1" placeholder="Escribe un número." />
+        <select id="calculo" name="mate">
+          <option value="+">Sumar</option>
+          <option value="-">Restar</option>
+          <option value="*">Multiplicar</option>
+          <option value="/">Dividir</option>
+        </select>
+      </div>
+      <div>
+        <label for="num2">Número 2:</label>
+        <input type="text" id="num2" placeholder="Escribe un número." />
+      </div>
+      <div>
+        <p>Resultado:<span id="resultado"></span></p>
+      </div>
+      <div>
+        <button type="button" id="btncalcular">Calcular</button>
+      </div>
+      <h2>Metodo 2</h2>
+      <div>
+        <label for="num_1">Número 1:</label>
+        <input type="text" id="num_1" placeholder="Escribe un número." />
+        <div>
+          <label for="num_2">Número 2:</label>
+          <input type="text" id="num_2" placeholder="Escribe un número." />
+        </div>
+        <div>
+          <p>Resultado:<span id="resultado2"></span></p>
+        </div>
+        <div>
+          <button class="suma" value="+">+</button>
+          <button class="resta" value="-">-</button>
+          <button class="multiplicar" value="*">*</button>
+          <button class="dividir" value="/">/</button>
+          <button type="button" id="btn_calcular_2">Calcular</button>
+        </div>
+      </div>
+    </div>
+    <script></script>
+  </body>
+</html>

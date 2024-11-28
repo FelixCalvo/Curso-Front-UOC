@@ -41,16 +41,59 @@ function verRadioSeleccionado() {
   return null;
 }
 
-
- A través de un formulario, el usuario debe introducir un número secreto que estará entre 0 y 5.
-El usuario tendrá tres intentos para acertar el número, si no lo logra, habrá perdido el juego.
-Debemos indicar en un cuadro de texto si el usuario gana, falla el número o pierde.
+//  A través de un formulario, el usuario debe introducir un número secreto que estará entre 0 y 5.
+// El usuario tendrá tres intentos para acertar el número, si no lo logra, habrá perdido el juego.
+// Debemos indicar en un cuadro de texto si el usuario gana, falla el número o pierde.
     
 
 const numeroAleatorios = Math.floor(Math.random() * 6);
-
-
+console.log(numeroAleatorios)
+let intentos = 0;
 function adivinaNumero(){
-  
+  const numero = document.getElementById("numero").value;
+  if(numeroAleatorios == numero){
+    document.getElementById("salidaadivinarnumero").textContent = "Has acertado";
+  } else {
+    document.getElementById("salidaadivinarnumero").textContent = "Has fallado";
+  }
+ intentos ++;  
+ if(intentos===3){
+   document.getElementById("salidaadivinarnumero").textContent = "Has perdido";
+ }
 }
 
+// Vamos a hacer una aplicación que se encargará de calcular el coste de un viaje. Para ello tendremos una función llamada calculateCost que llamará a otras tres funciones.
+
+// Cada una de estas tres funciones hará un cálculo de un coste parcial del viaje. La suma de los tres costes será el coste total del viaje.
+
+function calculateCost() {
+   const numNoches = document.querySelector("#numeronoches").value;
+  const selectciudades = document.getElementById("ciudades").value;
+ document.querySelector("#costeviaje").value = selectciudades;
+  const costHot = calculateHotelCost(numNoches);
+  document.getElementById("costehotel").value = costHot;
+
+  const costAlquiler = calculateRentingCarCost(numNoches);
+  console.log(costAlquiler + 'coste alquiler');
+  document.getElementById("costealquilercoche").value = costAlquiler;
+  const vuelo = calculateAirplaneCost(selectciudades, numNoches);
+  const costeTotal = costHot + costAlquiler + vuelo;
+  document.getElementById("costetotal").value = costeTotal;
+}
+
+const calculateHotelCost = numNoches =>  numNoches * 140;
+// Si alquilas un coche por 3 días o más, obtienes un descuento de 20€ sobre el total.
+// Si alquilas un coche por 7 días o más, obtienes un descuento de 50€ sobre el total (no acumulable con los 20€ de haber alquilado por más de 3 días).
+const calculateRentingCarCost = dias => {    
+  let alquiler = dias * 40;
+  if(dias >= 3){
+    alquiler += -20;
+  } else if(dias >= 7){
+    alquiler += - 50;
+  }
+  return alquiler;
+};
+
+const calculateAirplaneCost = (ciudad, dias) => dias>3 ? ciudad*0.9 : ciudad;
+
+document.querySelector("#btn1").addEventListener("click", calculateCost);

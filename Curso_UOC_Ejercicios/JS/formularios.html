@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formularios</title>
-    <script src=".//formularios.js"></script>
+    <script src=".//formularios.js" defer></script>
   </head>
   <body>
     <h1>DOM con Java Script</h1>
@@ -62,10 +62,51 @@ Que sea bonita.</textarea
       </button>
       <textarea id="salida" style="display: block; width: 400px"></textarea>
     </div>
+    <h2>Ejercicio 4</h2>
     <div>
-      <input type="text" placeholder="Escribe un numero de 0 a 5" id="numero" style="display: block"/>
-      <button type="button" onclick="adivinaNumero()"></button>
-      <textarea name="salida" id="salida"></textarea>
+      <input type="text" placeholder="Escribe un numero de 0 a 5" id="numero" />
+      <button style="display: block" type="button" onclick="adivinaNumero()">
+        Intenta adivinar el numero
+      </button>
+      <textarea name="salida" id="salidaadivinarnumero"></textarea>
+    </div>
+    <div>
+      <h2>Ejercicio 5</h2>
+      <label for="numeronoches">Introduzca el número de noches:</label>
+      <input type="text" placeholder="Numero de noches" id="numeronoches" />
+      <div>
+        <label for="costehotel">Coste hotel:</label>
+        <input type="text" placeholder="Coste hotel" id="costehotel" />
+      </div>
+      <div>
+        <label for="costeviaje">Coste viaje:</label>
+        <input type="text" placeholder="Coste viaje" id="costeviaje" />
+      </div>
+      <div>
+        <label for="costealquilercoche">Coste alquiler coche:</label>
+        <input
+          type="text"
+          placeholder="Coste alquiler coche"
+          id="costealquilercoche"
+        />
+      </div>
+      <div>
+        <label for="costetotal">Coste total del viaje:</label>
+        <input
+          type="text"
+          placeholder="Coste total del viaje"
+          id="costetotal"
+        />
+      </div>
+      <div>
+        <select id="ciudades" name="ciudad">
+          <option value="15">Oviedo</option>
+          <option value="700">Tokio</option>
+          <option value="90">Madrid</option>
+          <option value="90">Barcelona</option>
+        </select>
+        <button id="btn1">Calcula coste viaje</button>
+      </div>
     </div>
   </body>
 </html>
