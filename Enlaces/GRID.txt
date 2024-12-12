@@ -1,0 +1,12 @@
+//GRID *********************************
+
+//Laboratorio grid con muchos ejemplos de estructura
+https://labs.jensimmons.com/
+
+//ejemplos grid
+https://gridbyexample.com/
+
+//youtube grid Aprende CSS Grid MUY FÁCIL con ejercicios midulive
+https://www.youtube.com/watch?v=iTjkiI8QQsM
+
+*******************************************

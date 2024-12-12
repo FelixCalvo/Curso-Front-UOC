@@ -1,0 +1,36 @@
+body {
+  width: 1000px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.container div {
+  width: 100px;
+  height: 100px;
+}
+
+
+.red {
+  background-color: rgb(187, 15, 15);
+  border: 2px solid black;
+}
+
+.blue {
+  background-color: rgb(55, 30, 179);
+  border: 2px solid black;
+}
+
+.green {
+  background-color: rgb(20, 120, 20);
+  border: 2px solid black;
+}
+
+.orange {
+  background-color: rgb(226, 205, 15);
+  border: 2px solid black;
+}
+

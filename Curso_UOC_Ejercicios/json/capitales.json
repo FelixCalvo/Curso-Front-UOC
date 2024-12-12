@@ -1,0 +1,302 @@
+[
+  {
+    "pregunta": "¿Cuál es la capital de Bélgica?",
+    "pais": "Bélgica",
+    "respuestas": [
+      { "radioSelect": "Amberes", "solucion": false },
+      { "radioSelect": "Bruselas", "solucion": true },
+      { "radioSelect": "Gante", "solucion": false },
+      { "radioSelect": "Brujas", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Francia?",
+    "pais": "Francia",
+    "respuestas": [
+      { "radioSelect": "Marsella", "solucion": false },
+      { "radioSelect": "París", "solucion": true },
+      { "radioSelect": "Lyon", "solucion": false },
+      { "radioSelect": "Toulouse", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Alemania?",
+    "pais": "Alemania",
+    "respuestas": [
+      { "radioSelect": "Hamburgo", "solucion": false },
+      { "radioSelect": "Berlín", "solucion": true },
+      { "radioSelect": "Múnich", "solucion": false },
+      { "radioSelect": "Colonia", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Italia?",
+    "pais": "Italia",
+    "respuestas": [
+      { "radioSelect": "Milán", "solucion": false },
+      { "radioSelect": "Roma", "solucion": true },
+      { "radioSelect": "Nápoles", "solucion": false },
+      { "radioSelect": "Turín", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de España?",
+    "pais": "España",
+    "respuestas": [
+      { "radioSelect": "Barcelona", "solucion": false },
+      { "radioSelect": "Madrid", "solucion": true },
+      { "radioSelect": "Valencia", "solucion": false },
+      { "radioSelect": "Sevilla", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Portugal?",
+    "pais": "Portugal",
+    "respuestas": [
+      { "radioSelect": "Oporto", "solucion": false },
+      { "radioSelect": "Lisboa", "solucion": true },
+      { "radioSelect": "Coímbra", "solucion": false },
+      { "radioSelect": "Braga", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Países Bajos?",
+    "pais": "Países Bajos",
+    "respuestas": [
+      { "radioSelect": "Róterdam", "solucion": false },
+      { "radioSelect": "Ámsterdam", "solucion": true },
+      { "radioSelect": "La Haya", "solucion": false },
+      { "radioSelect": "Utrecht", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Grecia?",
+    "pais": "Grecia",
+    "respuestas": [
+      { "radioSelect": "Salónica", "solucion": false },
+      { "radioSelect": "Atenas", "solucion": true },
+      { "radioSelect": "Patras", "solucion": false },
+      { "radioSelect": "Heraclión", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Turquía?",
+    "pais": "Turquía",
+    "respuestas": [
+      { "radioSelect": "Estambul", "solucion": false },
+      { "radioSelect": "Ankara", "solucion": true },
+      { "radioSelect": "Esmirna", "solucion": false },
+      { "radioSelect": "Bursa", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Egipto?",
+    "pais": "Egipto",
+    "respuestas": [
+      { "radioSelect": "Alejandría", "solucion": false },
+      { "radioSelect": "El Cairo", "solucion": true },
+      { "radioSelect": "Giza", "solucion": false },
+      { "radioSelect": "Luxor", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Noruega?",
+    "pais": "Noruega",
+    "respuestas": [
+      { "radioSelect": "Bergen", "solucion": false },
+      { "radioSelect": "Oslo", "solucion": true },
+      { "radioSelect": "Trondheim", "solucion": false },
+      { "radioSelect": "Stavanger", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Suecia?",
+    "pais": "Suecia",
+    "respuestas": [
+      { "radioSelect": "Gotemburgo", "solucion": false },
+      { "radioSelect": "Estocolmo", "solucion": true },
+      { "radioSelect": "Malmö", "solucion": false },
+      { "radioSelect": "Uppsala", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Finlandia?",
+    "pais": "Finlandia",
+    "respuestas": [
+      { "radioSelect": "Espoo", "solucion": false },
+      { "radioSelect": "Helsinki", "solucion": true },
+      { "radioSelect": "Tampere", "solucion": false },
+      { "radioSelect": "Vantaa", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Dinamarca?",
+    "pais": "Dinamarca",
+    "respuestas": [
+      { "radioSelect": "Aarhus", "solucion": false },
+      { "radioSelect": "Copenhague", "solucion": true },
+      { "radioSelect": "Odense", "solucion": false },
+      { "radioSelect": "Aalborg", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Islandia?",
+    "pais": "Islandia",
+    "respuestas": [
+      { "radioSelect": "Akureyri", "solucion": false },
+      { "radioSelect": "Reikiavik", "solucion": true },
+      { "radioSelect": "Hafnarfjörður", "solucion": false },
+      { "radioSelect": "Kópavogur", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Suiza?",
+    "pais": "Suiza",
+    "respuestas": [
+      { "radioSelect": "Zúrich", "solucion": false },
+      { "radioSelect": "Berna", "solucion": true },
+      { "radioSelect": "Ginebra", "solucion": false },
+      { "radioSelect": "Basilea", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Austria?",
+    "pais": "Austria",
+    "respuestas": [
+      { "radioSelect": "Salzburgo", "solucion": false },
+      { "radioSelect": "Viena", "solucion": true },
+      { "radioSelect": "Innsbruck", "solucion": false },
+      { "radioSelect": "Graz", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Canadá?",
+    "pais": "Canadá",
+    "respuestas": [
+      { "radioSelect": "Toronto", "solucion": false },
+      { "radioSelect": "Ottawa", "solucion": true },
+      { "radioSelect": "Vancouver", "solucion": false },
+      { "radioSelect": "Montreal", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Australia?",
+    "pais": "Australia",
+    "respuestas": [
+      { "radioSelect": "Sídney", "solucion": false },
+      { "radioSelect": "Canberra", "solucion": true },
+      { "radioSelect": "Melbourne", "solucion": false },
+      { "radioSelect": "Brisbane", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Japón?",
+    "pais": "Japón",
+    "respuestas": [
+      { "radioSelect": "Osaka", "solucion": false },
+      { "radioSelect": "Tokio", "solucion": true },
+      { "radioSelect": "Kioto", "solucion": false },
+      { "radioSelect": "Nagoya", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de China?",
+    "pais": "China",
+    "respuestas": [
+      { "radioSelect": "Shanghái", "solucion": false },
+      { "radioSelect": "Pekín", "solucion": true },
+      { "radioSelect": "Cantón", "solucion": false },
+      { "radioSelect": "Shenzhen", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Rusia?",
+    "pais": "Rusia",
+    "respuestas": [
+      { "radioSelect": "San Petersburgo", "solucion": false },
+      { "radioSelect": "Moscú", "solucion": true },
+      { "radioSelect": "Kiev", "solucion": false },
+      { "radioSelect": "Minsk", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Brasil?",
+    "pais": "Brasil",
+    "respuestas": [
+      { "radioSelect": "Río de Janeiro", "solucion": false },
+      { "radioSelect": "Brasilia", "solucion": true },
+      { "radioSelect": "São Paulo", "solucion": false },
+      { "radioSelect": "Salvador", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Argentina?",
+    "pais": "Argentina",
+    "respuestas": [
+      { "radioSelect": "Córdoba", "solucion": false },
+      { "radioSelect": "Buenos Aires", "solucion": true },
+      { "radioSelect": "Rosario", "solucion": false },
+      { "radioSelect": "Mendoza", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de México?",
+    "pais": "México",
+    "respuestas": [
+      { "radioSelect": "Guadalajara", "solucion": false },
+      { "radioSelect": "Ciudad de México", "solucion": true },
+      { "radioSelect": "Monterrey", "solucion": false },
+      { "radioSelect": "Puebla", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Colombia?",
+    "pais": "Colombia",
+    "respuestas": [
+      { "radioSelect": "Medellín", "solucion": false },
+      { "radioSelect": "Bogotá", "solucion": true },
+      { "radioSelect": "Cali", "solucion": false },
+      { "radioSelect": "Barranquilla", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Perú?",
+    "pais": "Perú",
+    "respuestas": [
+      { "radioSelect": "Cusco", "solucion": false },
+      { "radioSelect": "Lima", "solucion": true },
+      { "radioSelect": "Arequipa", "solucion": false },
+      { "radioSelect": "Trujillo", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Chile?",
+    "pais": "Chile",
+    "respuestas": [
+      { "radioSelect": "Valparaíso", "solucion": false },
+      { "radioSelect": "Santiago", "solucion": true },
+      { "radioSelect": "Concepción", "solucion": false },
+      { "radioSelect": "La Serena", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Venezuela?",
+    "pais": "Venezuela",
+    "respuestas": [
+      { "radioSelect": "Maracaibo", "solucion": false },
+      { "radioSelect": "Caracas", "solucion": true },
+      { "radioSelect": "Valencia", "solucion": false },
+      { "radioSelect": "Barquisimeto", "solucion": false }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la capital de Ecuador?",
+    "pais": "Ecuador",
+    "respuestas": [
+      { "radioSelect": "Guayaquil", "solucion": false },
+      { "radioSelect": "Quito", "solucion": true },
+      { "radioSelect": "Cuenca", "solucion": false },
+      { "radioSelect": "Ambato", "solucion": false }
+    ]
+  }
+]

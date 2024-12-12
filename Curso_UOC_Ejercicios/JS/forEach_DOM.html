@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ForEach</title>
+    <script src="./forEach_DOM.js" defer></script>
+    <style>
+      .fondodiv {
+        /* background-color: #f1f1f1; */
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ejer1">
+      <p class="parraf">
+        ¿Cuales de los siguientes lenguajes soon orientados a objetos?:
+        <span class="red">Java</span>, VB6, <span class="red">C++</span>, C,
+        <span class="red">C#</span>, Cobol?
+      </p>
+      <div><button class="button">Ver solución</button></div>
+    </div>
+    <div class="ejer2">
+      <input type="number" placeholder="Introduce un número" /><input
+        type="number"
+        placeholder="Introduce un número"
+      /><input type="number" placeholder="Introduce un número" />
+      <p class="salidadatos"></p>
+      <div><button class="button2">Sumar</button></div>
+    </div>
+    <div class="ejer3" style="display: flex; flex-direction: column">
+      <div><button class="btn_3">Pulsar</button></div>
+      <div><button class="btn_3" style="background: 'red'">Pulsar</button></div>
+      <div><button class="btn_3">Pulsar</button></div>
+      <div><button class="btn_3">Pulsar</button></div>
+      <div><button class="btn_3" style="background: 'red'">Pulsar</button></div>
+      <div><button class="btn_3">Pulsar</button></div>
+    </div>
+    <div
+      class="ejer4"
+      style="display: flex; flex-direction: column; align-items: start"
+    >
+      <p>¿Qué superheroe es más fuerte?</p>
+      <div class="fondodiv">
+        <input type="radio" name="super" id="primersuper" checked />
+        <label for="primersuper">Batman</label>
+      </div>
+      <div class="fondodiv">
+        <input type="radio" name="super" id="secondsuper" class="correcto" />
+        <label for="secondsuper">Superman</label>
+      </div>
+      <p>¿En qué consiste el sentido arácnido de Spiderman?</p>
+      <div class="fondodiv">
+        <input type="radio" name="arana" id="arañas" checked />
+        <label for="primersuper">Puede detectar cuando hay aranas cerca.</label>
+      </div>
+      <div class="fondodiv">
+        <input type="radio" name="arana" id="peligro" class="correcto" />
+        <label for="secondsuper"
+          >Puede detectar cuando hay un peligro cerca.</label
+        >
+      </div>
+      <p>¿Cuál es el verdadero nombre de Spiderman?</p>
+      <div class="fondodiv">
+        <input type="radio" name="nombre" id="peter" class="correcto" checked />
+
+        <label for="peter">Peter Parker</label>
+      </div>
+
+      <div class="fondodiv">
+        <input type="radio" name="nombre" id="parker" />
+
+        <label for="parker">Bruce Wayne</label>
+      </div>
+      <div><button class="btn_4">Ver solución</button></div>
+    </div>
+  </body>
+</html>
