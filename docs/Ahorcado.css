@@ -48,8 +48,8 @@ img {
   /* background-color: lightcoral; */
   gap: 16px;
   position: absolute;
-  margin-left: 205px;
-  margin-top: 179px;
+  top: 180px;
+  left: 205px;
 }
 
 .segundaFila {
