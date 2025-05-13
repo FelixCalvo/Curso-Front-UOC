@@ -48,7 +48,7 @@ generarSpansPorLetras(palabraAdivinar);
 
 document.querySelectorAll('.teclas').forEach(tecla => {
   tecla.onclick = function() {
-    const letra = tecla.id.slice(-1);//para saber la letra del teclado pulsado tecla_a la ultima letra
+    const letra = tecla.id.slice(-1).toUpperCase();//para saber la letra del teclado pulsado tecla_a la ultima letra
     console.log(letra); 
     // Comprobar si la letra está en la palabra a adivinar
     if (palabraAdivinar.includes(letra)) {
